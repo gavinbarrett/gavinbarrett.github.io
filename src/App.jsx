@@ -8,7 +8,7 @@ function Name(props) {
 }
 
 function ProfilePic() {
-	return (<img id='profile' src='./profile.jpg'/>);
+	return (<img id='profile' src='../dist/profile.jpg'/>);
 }
 
 function Header() {
