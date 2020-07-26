@@ -1,0 +1,131 @@
+html {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #e56b6f; 
+}
+
+#header {
+	width: 100vw;
+	height: 32vh;
+	background: #6d597a;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	color: #eaac8b;
+	font-family: 'Baloo Bhai 2';
+}
+
+#name {
+	font-size: 15vh;
+}
+
+#profile {
+	width: 15vw;
+	height: 30vh;
+	border-radius: 100%;
+}
+
+#page {
+	width: 100vw;
+	height: 130vh;
+	display: flex;
+	flex-direction: column;
+	background: #355070;
+}
+
+#summary {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #355070;
+	width: 100vw;
+	height: 30vh;
+	color: #eaac8b;
+	font-family: 'Baloo Bhai 2';
+}
+
+#table {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	background: #6d597a;
+	width: 100vw;
+	height: 130vh;
+}
+
+#projectcard {
+	width: 45vw;
+	height: 50vh;
+	border-radius: 8px;
+	background: #355070;
+}
+
+#projecttitle {
+	color: #eaac8b;
+	text-align: center;
+	font-size: 2vw;
+	font-family: 'Baloo Bhai 2';
+}
+
+#projectsnippet {
+	display: flex;
+	justify-content: center;
+}
+
+#projectimage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30vw;
+	height: 30vh;
+}
+
+.image {
+	width: 20vw;
+	height: 20vh;
+	border-radius: 5px;
+}
+
+.desc {
+	display: flex;
+	width: 30vw;
+	height: 30vh;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	font-size: 1.5vw;
+	font-family: 'Baloo Bhai 2';
+	color: #eaac8b;
+}
+
+.links {
+	display: flex;
+	justify-content: space-evenly;
+	font-family: 'Baloo Bhai 2';
+	color: #e56b6f;
+}
+
+.githublink {
+	display: flex;
+	width: 15vw;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.giticon {
+	width: 20px;
+	height: 20px;
+}
