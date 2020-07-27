@@ -34,11 +34,11 @@ function Table() {
 	const organon = <img className='image' src='../dist/organon.gif'/>;
 	const exif_god = <img className='image' src='../dist/exif.gif'/>
 	const secretfracture = <img className='image' src='../dist/secret.gif'/>
-	const dndice = <img className='image' src='../dist/dndice.png'/>
+	const dndice = <img className='image' src='../dist/dndice.gif'/>
 
 	const exifdesc = 'Exif God is a simple utility for viewing image metadata.';
 	const organondesc = 'Organon is a logic analyzer that determines whether arguments in propositional logic are valid.';
-	const secretdesc = 'Secret Fracture is a tool that implements a thresholded secret sharing scheme. This can be used for encrypting private keys and password among multiple parties.';
+	const secretdesc = 'Secret Fracture is a tool that implements a thresholded secret sharing scheme. This can be used for encrypting private keys and passwords among multiple parties.';
 	const dndicedesc = 'D&Dice is a tabletop dice rolling application written with the WebGL API.';
 
 	return (<div id='table'>
