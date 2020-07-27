@@ -33,7 +33,6 @@ function Portfolio(props) {
 	return (<div>
 	<Header/>
 	<div id='page'>
-		<Header/>
 		<Summary/>
 		<Table/>
 	</div>
