@@ -1,32 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
-function Name(props) {
-	return (<div id='name'>
-		{props.name}
-	</div>);
-}
-
-function ProfilePic() {
-	return (<img id='profile' src='../dist/profile.jpg'/>);
-}
-
-function Header() {
-	return (<div id='header'>
-		<Name name={'Gavin Barrett'}/>
-		<ProfilePic/>
-	</div>);
-}
+import { Header } from './Header.jsx';
+import { ProjectCard } from './ProjectCard.jsx';
 
 function Summary() {
 	const summary = "I am a full stack developer with a passion for building projects that empower users.";
 	return (<div id='summary'>
 		{summary}
 	</div>);
-}
-
-function ProjectImage(props) {
-	return (<div id='projectimage'>{props.image}</div>);
 }
 
 function Table() {
@@ -49,48 +29,17 @@ function Table() {
 	</div>);
 }
 
-function Page(props) {
-	return (<div id='page'>
+function Portfolio(props) {
+	return (<div>
+	<Header/>
+	<div id='page'>
+		<Header/>
 		<Summary/>
 		<Table/>
+	</div>
 	</div>);
 }
 
-function ProjectDescription(props) {
-	return (<div className='desc'>{props.desc}</div>);
+export {
+	Portfolio
 }
-
-function GithubLink(props) {
-	return (<a className='githublink' href={props.githublink}>Check out the code <img className='giticon' src='../dist/GitHub-Mark/PNG/GitHub-Mark-64px.png'/></a>);
-}
-
-function AppLink(props) {
-	return (<a className='applink' href={props.applink}>Check out {props.project}</a>);
-}
-
-function ProjectLinks(props) {
-	return (<div className='links'>
-		<AppLink applink={props.applink} project={props.project}/>
-		<GithubLink githublink={props.githublink}/>
-	</div>);
-}
-
-function ProjectCard(props) {
-	return (<div id="projectcard">
-		<div id='projecttitle'>{props.project}</div>
-		<div id='projectsnippet'>
-		<ProjectDescription desc={props.desc}/>
-		<ProjectImage image={props.image}/>
-		</div>
-		<ProjectLinks applink={props.applink} githublink={props.githublink} project={props.project}/>
-	</div>);
-}
-
-function App(props) {
-	return(<div>
-		<Header/>
-		<Page/>
-	</div>);
-}
-
-ReactDOM.render(<App message={"This is a React app!"}/>, document.getElementById('root'));
