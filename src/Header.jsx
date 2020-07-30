@@ -1,19 +1,16 @@
 import React from 'react';
+import TypeWriter from 'react-typewriter';
 
-function Name(props) {
+function Intro(props) {
 	return (<div id='name'>
-		{props.name}
+		<TypeWriter typing={1}>{props.greeting}</TypeWriter>
 	</div>);
 }
 
-function ProfilePic() {
-	return (<img id='profile' src='../dist/Astral.jpg'/>);
-}
-
-function Header() {
-	return (<div id='header'>
-		<Name name={'Gavin Barrett'}/>
-		<ProfilePic/>
+function Header(props) {
+	return (<div id='header' autofocus>
+		<Intro greeting={props.greeting}/>
+		<i id='arrow' class="fas fa-chevron-down"/>
 	</div>);
 }
 

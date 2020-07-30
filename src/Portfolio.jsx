@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Header } from './Header.jsx';
+import { Skills } from './Skills.jsx';
 import { ProjectCard } from './ProjectCard.jsx';
 
+
 function Summary() {
-	const summary = "I am a full stack developer with a passion for building projects that empower users.";
+	const summary = "I am a full stack developer with a passion for building projects that empower users. I began developing with ReactJS three years ago and have been delighted by its ease of use.";
 	return (<div id='summary'>
+		<div id='summarytextbox'>
 		{summary}
+		</div>
 	</div>);
 }
 
@@ -16,24 +20,33 @@ function Table() {
 	const secretfracture = <img className='image' src='../dist/secret.gif'/>
 	const dndice = <img className='image' src='../dist/dndice.gif'/>
 
-	const exifdesc = 'Exif God is a simple utility for viewing image metadata.';
+	const exifdesc = 'Exif God is a simple utility for viewing and removing image metadata.';
 	const organondesc = 'Organon is a logic analyzer that determines whether arguments in propositional logic are valid.';
 	const secretdesc = 'Secret Fracture is a tool that implements a thresholded secret sharing scheme. This can be used for encrypting private keys and passwords among multiple parties.';
 	const dndicedesc = 'D&Dice is a tabletop dice rolling application written with the WebGL API.';
 
-	return (<div id='table'>
+	return (<div>
+	<div className='tabheader'>{'Projects'}</div>
+	<div id='table'>
 	<ProjectCard project={'D&Dice'} image={dndice} desc={dndicedesc} applink={'http://d-and-dice.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/DnDice'}/>
 	<ProjectCard project={'Exif God'} image={exif_god} desc={exifdesc} applink={'http://exif-god.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/exif_god'}/>
 	<ProjectCard project={'Organon'} image={organon} desc={organondesc} applink={'http://organon-engine.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/SL_Engine'}/>
 	<ProjectCard project={'Secret Fracture'} image={secretfracture} desc={secretdesc} applink={'http://secret-fracture.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/share-a-byte'}/>
+	</div>
 	</div>);
 }
 
 function Portfolio(props) {
+	useEffect(() => {
+		// focus on the header after the initial render
+		window.scrollTo(0,0);
+	}, []);
+
 	return (<div>
-	<Header/>
+	<Header greeting={'Hi, I\'m Gavin. I build and deploy full stack applications.'}/>
 	<div id='page'>
 		<Summary/>
+		<Skills/>
 		<Table/>
 	</div>
 	</div>);

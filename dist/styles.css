@@ -18,17 +18,40 @@ a {
 
 #header {
 	width: 100vw;
-	height: 32vh;
-	background: #6d597a;
+	height: 100vh;
+	background: #355070;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	color: #eaac8b;
-	font-family: 'Baloo Bhai 2';
+	background-image: url('computercode.jpg');
+	color: white;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 25px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+#arrow {
+	top: 480px;
+	position: absolute;
+	z-index: 3;
+	animation: glow 1.5s ease-in-out infinite alternate;
 }
 
 #name {
-	font-size: 15vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 12vh;
 }
 
 #profile {
@@ -39,7 +62,7 @@ a {
 
 #page {
 	width: 100vw;
-	height: 150vh;
+	height: 240vh;
 	display: flex;
 	flex-direction: column;
 	background: #355070;
@@ -50,10 +73,21 @@ a {
 	justify-content: center;
 	align-items: center;
 	background: #355070;
+	font-size: 2vw;
 	width: 100vw;
 	height: 30vh;
-	color: #eaac8b;
+	color: #EAAC8B;
 	font-family: 'Baloo Bhai 2';
+}
+
+#summarytextbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80vw;
+	height: 30vh;
+	top: 10%;
+	text-align: center;
 }
 
 #table {
@@ -61,7 +95,6 @@ a {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
-	background: #6d597a;
 	width: 100vw;
 	height: 130vh;
 }
@@ -71,10 +104,12 @@ a {
 	height: 50vh;
 	border-radius: 8px;
 	background: #355070;
+	border-style: solid;
+	border-color: #EAAC8B;
 }
 
 #projecttitle {
-	color: #eaac8b;
+	color: #EAAC8B;
 	text-align: center;
 	font-size: 2vw;
 	font-family: 'Baloo Bhai 2';
@@ -83,6 +118,7 @@ a {
 #projectsnippet {
 	display: flex;
 	justify-content: center;
+	color: #EAAC8B;
 }
 
 #projectimage {
@@ -108,24 +144,87 @@ a {
 	margin: 10px;
 	font-size: 1.5vw;
 	font-family: 'Baloo Bhai 2';
-	color: #eaac8b;
+	color: #EAAC8B;
 }
 
 .links {
 	display: flex;
 	justify-content: space-evenly;
 	font-family: 'Baloo Bhai 2';
-	color: #e56b6f;
 }
 
 .githublink {
 	display: flex;
-	width: 15vw;
+	width: 3vw;
 	justify-content: space-evenly;
 	align-items: center;
+	background: #F7D1CD;
+	border-radius: 5px;
+	color: #735D78;
+}
+
+.applink {
+	background: #F7D1CD;
+	border-radius: 5px;
+	color: #735D78;
+	padding: 3px;
+}
+
+.githublink:hover {
+	background: #B392AC;
+}
+
+.applink:hover {
+	background: #B392AC;
 }
 
 .giticon {
 	width: 20px;
 	height: 20px;
 }
+
+.skills {
+	width: 100vw;
+	height: 40vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.skillcard {
+	width: 31vw;
+	height: 32vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background: #6D597A;
+	border-radius: 8px;
+	font-family: 'Baloo Bhai 2';
+}
+
+.tabheader {
+	font-size: 5vw;
+	font-family: 'Baloo Bhai 2';
+	color: #E56B6F;
+	margin-left: 3vw;
+}
+
+.skillcategory {
+	color: #E56B6F;
+	font-size: 2vw;
+}
+
+.skilllist {
+	width: 26vw;
+	height: 26vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: space-between;
+	flex-wrap: wrap;
+	color: #EAAC8B;
+	font-size: 1.5vw;
+}
+
+

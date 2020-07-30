@@ -31,7 +31,7 @@ function AppLink(props) {
 }
 
 function GithubLink(props) {
-	return (<a className='githublink' href={props.githublink}>Check out the code <img className='giticon' src='../dist/GitHub-Mark/PNG/GitHub-Mark-64px.png'/></a>);
+	return (<a className='githublink' href={props.githublink}><img className='giticon' src='../dist/GitHub-Mark/PNG/GitHub-Mark-64px.png'/></a>);
 }
 
 export {
