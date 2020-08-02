@@ -1,39 +1,37 @@
 import React from 'react';
 
-function ProjectCard(props) {
+function ProjectCard({applink, githublink, project, image, desc}) {
 	return (<div id="projectcard">
-		<div id='projecttitle'>{props.project}</div>
+		<div id='projecttitle'>{project}</div>
 		<div id='projectsnippet'>
-		<ProjectDescription desc={props.desc}/>
-		<ProjectImage image={props.image}/>
+		<ProjectDescription desc={desc}/>
+		<ProjectImage image={image}/>
 		</div>
-		<ProjectLinks applink={props.applink} githublink={props.githublink} project={props.project}/>
+		<ProjectLinks applink={applink} githublink={githublink} project={project}/>
 	</div>);
 }
 
-function ProjectDescription(props) {
-	return (<div className='desc'>{props.desc}</div>);
+function ProjectDescription({desc}) {
+	return (<div className='desc'>{desc}</div>);
 }
 
-function ProjectImage(props) {
-	return (<div id='projectimage'>{props.image}</div>);
+function ProjectImage({image}) {
+	return (<div id='projectimage'>{image}</div>);
 }
 
-function ProjectLinks(props) {
+function ProjectLinks({applink, project, githublink}) {
 	return (<div className='links'>
-		<AppLink applink={props.applink} project={props.project}/>
-		<GithubLink githublink={props.githublink}/>
+		<AppLink applink={applink} project={project}/>
+		<GithubLink githublink={githublink}/>
 	</div>);
 }
 
-function AppLink(props) {
-	return (<a className='applink' href={props.applink}>Check out {props.project}</a>);
+function AppLink({applink, project}) {
+	return (<a className='applink' href={applink}>Check out {project}</a>);
 }
 
-function GithubLink(props) {
-	return (<a className='githublink' href={props.githublink}><img className='giticon' src='../dist/GitHub-Mark/PNG/GitHub-Mark-64px.png'/></a>);
+function GithubLink({githublink}) {
+	return (<a className='githublink' href={githublink}><img className='giticon' src='../dist/GitHub-Mark/PNG/GitHub-Mark-64px0xEAAC8B.png'/></a>);
 }
 
-export {
-	ProjectCard
-}
+export default ProjectCard;

@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
-import { Header } from './Header.jsx';
-import { Skills } from './Skills.jsx';
-import { ProjectCard } from './ProjectCard.jsx';
-
+import React, { useEffect, useState } from 'react';
+import Header from './Header.jsx';
+import Skills from './Skills.jsx';
+import ProjectCard from './ProjectCard.jsx';
+import Footer from './Footer.jsx';
+import Emailer from './Emailer';
 
 function Summary() {
 	const summary = "I am a full stack developer with a passion for building projects that empower users. I began developing with ReactJS three years ago and have been delighted by its ease of use.";
@@ -13,7 +14,7 @@ function Summary() {
 	</div>);
 }
 
-function Table() {
+function Table({emailer, updateEmailer}) {
 	
 	const organon = <img className='image' src='../dist/organon.gif'/>;
 	const exif_god = <img className='image' src='../dist/exif.gif'/>
@@ -22,7 +23,7 @@ function Table() {
 
 	const exifdesc = 'Exif God is a simple utility for viewing and removing image metadata.';
 	const organondesc = 'Organon is a logic analyzer that determines whether arguments in propositional logic are valid.';
-	const secretdesc = 'Secret Fracture is a tool that implements a thresholded secret sharing scheme. This can be used for encrypting private keys and passwords among multiple parties.';
+	const secretdesc = 'Secret Fracture is a tool that implements a thresholded secret sharing scheme, encrypting messages into shares.';
 	const dndicedesc = 'D&Dice is a tabletop dice rolling application written with the WebGL API.';
 
 	return (<div>
@@ -32,11 +33,14 @@ function Table() {
 	<ProjectCard project={'Exif God'} image={exif_god} desc={exifdesc} applink={'http://exif-god.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/exif_god'}/>
 	<ProjectCard project={'Organon'} image={organon} desc={organondesc} applink={'http://organon-engine.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/SL_Engine'}/>
 	<ProjectCard project={'Secret Fracture'} image={secretfracture} desc={secretdesc} applink={'http://secret-fracture.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/share-a-byte'}/>
+	{emailer ? <Emailer updateEmailer={updateEmailer}/> : ''}
 	</div>
 	</div>);
 }
 
 function Portfolio(props) {
+	const [emailer, updateEmailer] = useState(null);
+
 	useEffect(() => {
 		// focus on the header after the initial render
 		window.scrollTo(0,0);
@@ -47,11 +51,9 @@ function Portfolio(props) {
 	<div id='page'>
 		<Summary/>
 		<Skills/>
-		<Table/>
+		<Table emailer={emailer} updateEmailer={updateEmailer}/>
+		<Footer updateEmailer={updateEmailer}/>
 	</div>
 	</div>);
 }
-
-export {
-	Portfolio
-}
+export default Portfolio;

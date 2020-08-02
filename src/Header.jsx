@@ -1,19 +1,15 @@
 import React from 'react';
 import TypeWriter from 'react-typewriter';
 
-function Intro(props) {
+function Intro({greeting}) {
 	return (<div id='name'>
-		<TypeWriter typing={1}>{props.greeting}</TypeWriter>
+		<TypeWriter typing={1}>{greeting}</TypeWriter>
 	</div>);
 }
 
-function Header(props) {
-	return (<div id='header' autofocus>
-		<Intro greeting={props.greeting}/>
+export default function Header({greeting}) {
+	return (<div id='header'>
+		<Intro greeting={greeting}/>
 		<i id='arrow' class="fas fa-chevron-down"/>
 	</div>);
-}
-
-export {
-	Header
 }
