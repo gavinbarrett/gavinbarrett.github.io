@@ -510,7 +510,7 @@ and (max-device-width : 667px) {
 
 .githublink {
 	display: flex;
-	width: 5vw;
+	width: 7vw;
 	height: 4vh;
 	justify-content: center;
 	align-items: center;
@@ -541,8 +541,8 @@ and (max-device-width : 667px) {
 }
 
 .giticon {
-	width: 20px;
-	height: 20px;
+	width: 45px;
+	height: 45px;
 }
 
 .skills {
