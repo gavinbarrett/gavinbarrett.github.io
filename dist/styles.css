@@ -291,7 +291,15 @@ a {
 	from { top: 30%; }
 	to { top: 200%; }
 }
-
+@keyframes fadeEmailer {
+	from { opacity: 100%; }
+	to { opacity: 20%; }
+}
+.fadeClass {
+	animation-name: fadeEmailer;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
 .scrollDownClass {
 	animation-name: scrollDown;
 	animation-duration: 1s;
@@ -343,24 +351,6 @@ textarea {
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
-html {
-	width: 100vw;
-	height: 100vh;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-
-body {
-	width: 100vw;
-	height: 100vh;
-	padding: 0;
-	margin: 0;
-}
-
-a {
-	text-decoration: none;
-	color: #e56b6f; 
-}
 
 #header {
 	width: 100vw;
@@ -386,7 +376,7 @@ a {
 }
 
 #arrow {
-	top: 1000px;
+	top: 1200px;
 	position: absolute;
 	z-index: 3;
 	animation: glow 1.5s ease-in-out infinite alternate;
@@ -459,15 +449,21 @@ a {
 
 #projecttitle {
 	color: #D66853;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
-	font-size: 5vw;
+	font-size: 7vw;
 	font-family: 'Baloo Bhai 2';
+	height: 10vh;
+	width: 80vw;
 }
 
 #projectsnippet {
 	display: flex;
-	width: 80vw;
-	height: 40vh;
+	flex-direction: column-reverse;
+	width: 100vw;
+	height: 80vh;
 	justify-content: space-evenly;
 	align-items: center;
 	color: #EAAC8B;
@@ -477,20 +473,20 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 30vw;
+	width: 80vw;
 	height: 30vh;
 }
 
 .image {
-	width: 40vw;
+	width: 80vw;
 	height: 20vh;
 	border-radius: 5px;
 }
 
 .desc {
 	display: flex;
-	width: 30vw;
-	height: 30vh;
+	width: 80vw;
+	height: 10vh;
 	justify-content: center;
 	align-items: center;
 	margin: 10px;
@@ -501,14 +497,18 @@ a {
 
 .links {
 	display: flex;
+	width: 100vw;
+	height: 10vh;
 	justify-content: space-evenly;
+	align-items: space-between;
 	font-family: 'Baloo Bhai 2';
 }
 
 .githublink {
 	display: flex;
-	width: 3vw;
-	justify-content: space-evenly;
+	width: 5vw;
+	height: 3vh;
+	justify-content: center;
 	align-items: center;
 	background: #212D40;
 	border-radius: 5px;
@@ -516,6 +516,11 @@ a {
 }
 
 .applink {
+	display: flex;
+	width: 20vw;
+	height: 3vh;
+	justify-content: center;
+	align-items: center;
 	background: #212D40;
 	border-radius: 5px;
 	color: #735D78;
@@ -599,17 +604,95 @@ a {
 	width: 100vw;
 	height: 15vh;
 	align-items: center;
+	font-size: 2vh;
 	justify-content: flex-end;
 	background: #364156;
 	font-family: 'Baloo Bhai 2';
+	margin-right: 4%;
 }
 #footerghl {
-	margin-right: 4%;
 }
 #footerlil {
-	margin-right: 4%;
 }
 #footerel {
-	margin-right: 4%;
+}
+#emailer {
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90vw;
+	height: 60vh;
+	background: white;
+	border-radius: 5px;
+	top: 300%;
+	animation-name: scrollUp;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+#emailContainer {
+	position: absolute;
+	display: flex;
+	width: 100vw;
+	height: 100vw;
+	justify-content: center;
+	align-items: flex-end;
+	z-index: 5px;
+	font-family: 'Baloo Bhai 2';
+}
+@keyframes scrollUp {
+	from { top: 200%; }
+	to { top: 170%; }
+}
+.scrollDownClass {
+	animation-name: scrollDown;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.close {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	opacity: 0.3;
+	font-size: 10vw;
+}
+.close:hover {
+	opacity: 0.6;
+}
+input[type=text] {
+	padding: 10px;
+	margin: 5px;
+	width: 90%;
+	border: 0;
+	border-radius: 10px;
+	box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+#submit {
+	width: 100%;
+	border: 0;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px;
+	background: #364156;
+	color: white;
+	font-size: 1.5vw;
+}
+#submit:hover {
+	background: #212D40;
+}
+textarea {
+  width:100%;
+  resize: none;
+  padding:15px;
+  border-radius:15px;
+  border:0;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+}
+#subject {
+	width: 30vw;
+}
+#email {
+	width: 30vw;
 }
 }

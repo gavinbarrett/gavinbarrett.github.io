@@ -16,7 +16,7 @@ function Summary() {
 
 function Table({emailer, updateEmailer}) {
 	
-	const organon = <img className='image' src='../dist/organon.gif'/>;
+	const organon = <img className='image' src='../dist/organon_demo.gif'/>;
 	const exif_god = <img className='image' src='../dist/exif.gif'/>
 	const secretfracture = <img className='image' src='../dist/secret.gif'/>
 	const dndice = <img className='image' src='../dist/dndice.gif'/>

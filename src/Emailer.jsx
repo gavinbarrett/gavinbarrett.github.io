@@ -31,7 +31,16 @@ function Submit() {
 }
 
 function ExitButton({updateEmailer}) {
-	return(<div className='close' onClick={() => updateEmailer(false)}>&times;</div>);
+	return(<div className='close' onClick={() => {
+		// add the fade class to the emailer
+		/*
+		const emailer = document.getElementById('emailer');
+		emailer.classList.add('fadeClass');
+		*/
+		// wait for 1 second before deleting emailer component
+		//setTimeout(() => updateEmailer(false), 12000);
+		updateEmailer(false);
+	}}>&times;</div>);
 }
 
 export default function Emailer({updateEmailer}) {
