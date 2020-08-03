@@ -31,7 +31,7 @@ function AppLink({applink, project}) {
 }
 
 function GithubLink({githublink}) {
-	return (<a className='githublink' href={githublink}><img className='giticon' src='../dist/GitHub-Mark/PNG/GitHub-Mark-64px0xEAAC8B.png'/></a>);
+	return (<a className='githublink' href={githublink}><img className='giticon' src='../dist/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus0xEAAC8B.png'/></a>);
 }
 
 export default ProjectCard;

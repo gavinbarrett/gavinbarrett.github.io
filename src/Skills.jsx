@@ -26,8 +26,8 @@ function Skills() {
 	<div className='skills'>
 	<SkillCard category={'Languages'} skills={[['• Python','5yrs'], ['• Javascript','3yrs'], ['• Typescript','1yr'], ['• Java','4yrs'], ['• C/C++','5yrs'], ['• SQL','1yr'], ['• HTML5','3yrs'], ['• CSS3/SCSS','3yrs']]}/>
 	<SkillCard category={'Libraries'} skills={[['• ReactJS/JSX','3yrs'],['• Express','2yrs'],['• Passport','2yrs'],['• Flask','3yrs'],['• ThreeJS','1yr'],['• CannonJS','1yr']]}/>
-	<SkillCard category={'Build/Development'} skills={[['• NPM/Yarn','2yrs'],['• Git','4yrs'],['• Docker','1yr'],['• Linux/RHEL','5yrs'],['• Webpack','1yr'],['• Jest','1yr'],['• Bash/CLI','5yrs']]}/>
-	<ReactTooltip backgroundColor={'#355070'} textColor={'#EAAC8B'}/>
+	<SkillCard category={'Build/Development'} skills={[['• NPM/Yarn','2yrs'],['• Git','4yrs'],['• Docker','1yr'],['• Linux/RHEL','5yrs'],['• Webpack','1yr'],['• Bash/CLI','5yrs']]}/>
+	<ReactTooltip className={'tooltip'} backgroundColor={'#355070'} textColor={'#EAAC8B'}/>
 	</div>
 	</div>);
 }

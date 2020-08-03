@@ -345,6 +345,10 @@ textarea {
   border:0;
   box-shadow:4px 4px 10px rgba(0,0,0,0.06);
 }
+.tooltip {
+	font-family: 'Baloo Bhai 2';
+	font-size: 3vw;
+}
 
 
 /* iPhone 6/7/8 */
@@ -507,7 +511,7 @@ and (max-device-width : 667px) {
 .githublink {
 	display: flex;
 	width: 5vw;
-	height: 3vh;
+	height: 4vh;
 	justify-content: center;
 	align-items: center;
 	background: #212D40;
@@ -517,13 +521,14 @@ and (max-device-width : 667px) {
 
 .applink {
 	display: flex;
-	width: 20vw;
-	height: 3vh;
+	width: 25vw;
+	height: 4vh;
 	justify-content: center;
 	align-items: center;
+	font-size: 2.5vw;
 	background: #212D40;
 	border-radius: 5px;
-	color: #735D78;
+	color: #EAAC8B;
 	padding: 3px;
 }
 
