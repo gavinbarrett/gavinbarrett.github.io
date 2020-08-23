@@ -21,8 +21,8 @@ function ProjectImage({image}) {
 
 function ProjectLinks({applink, project, githublink}) {
 	return (<div className='links'>
-		<AppLink applink={applink} project={project}/>
-		<GithubLink githublink={githublink}/>
+		{applink ? <AppLink applink={applink} project={project}/> : ''}
+		{githublink ? <GithubLink githublink={githublink}/> : ''}
 	</div>);
 }
 
