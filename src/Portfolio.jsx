@@ -5,7 +5,7 @@ import ProjectCard from './ProjectCard.jsx';
 import Footer from './Footer.jsx';
 import Emailer from './Emailer';
 
-function Summary() {
+const Summary = () => {
 	const summary = "I am a full stack developer with a passion for building projects that empower users. I began developing with ReactJS three years ago and have been delighted by its ease of use.";
 	return (<div id='summary'>
 		<div id='summarytextbox'>
@@ -14,7 +14,7 @@ function Summary() {
 	</div>);
 }
 
-function Table({emailer, updateEmailer}) {
+const Table = ({emailer, updateEmailer}) => {
 	
 	const organon = <img className='image' src='../dist/organon_demo.gif'/>;
 	const exif_god = <img className='image' src='../dist/exif.gif'/>;
@@ -44,7 +44,7 @@ function Table({emailer, updateEmailer}) {
 	</div>);
 }
 
-function Portfolio(props) {
+const Portfolio = (props) => {
 	const [emailer, updateEmailer] = useState(null);
 
 	useEffect(() => {

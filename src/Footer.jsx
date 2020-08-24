@@ -1,6 +1,6 @@
 import React from 'react';
 
-function GithubLink({link}) {
+const GithubLink = ({link}) => {
 	return (<div id='footerghl'><a href={link}>
 	GitHub
 	<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#e56b6f" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -10,14 +10,14 @@ function GithubLink({link}) {
 	</a></div>);
 }
 
-function LinkedInLink({link}) {
+const LinkedInLink = ({link}) => {
 	return (<div id='footerlil'><a href={link}>
 	Linked
 	<img id='footerlinkedicon' src='../dist/linkedcolor.png'/>
 	</a></div>);
 }
 
-function EmailLink({address, updateEmailer}) {
+const EmailLink = ({address, updateEmailer}) => {
 	return (<div id='footerel' onClick={() => updateEmailer(true)}>
 	Contact Me
 	<svg id='footermailicon' xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" viewBox="0 0 24 24" stroke-width="1.5" stroke="#e56b6f" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -28,10 +28,12 @@ function EmailLink({address, updateEmailer}) {
 	</div>);
 }
 
-export default function Footer({updateEmailer}) {
+const Footer = ({updateEmailer}) => {
 	return (<div id='footer'>
 		<GithubLink link={'https://github.com/gavinbarrett'}/>
 		<LinkedInLink link={'https://www.linkedin.com/in/gavin-barrett-3802a9121/'}/>
 		<EmailLink address={'gavinbrrtt@gmail.com'} updateEmailer={updateEmailer}/>
 	</div>);
 }
+
+export default Footer; 

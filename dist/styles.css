@@ -307,7 +307,7 @@ a {
 }
 @keyframes scrollUp {
 	from { top: 200%; }
-	to { top: 30%; }
+	to { top: 50%; }
 }
 @keyframes scrollDown {
 	from { top: 30%; }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ProjectCard({applink, githublink, project, image, desc}) {
+const ProjectCard = ({applink, githublink, project, image, desc}) => {
 	return (<div id="projectcard">
 		<div id='projecttitle'>{project}</div>
 		<div id='projectsnippet'>
@@ -11,26 +11,26 @@ function ProjectCard({applink, githublink, project, image, desc}) {
 	</div>);
 }
 
-function ProjectDescription({desc}) {
+const ProjectDescription = ({desc}) => {
 	return (<div className='desc'>{desc}</div>);
 }
 
-function ProjectImage({image}) {
+const ProjectImage = ({image}) => {
 	return (<div id='projectimage'>{image}</div>);
 }
 
-function ProjectLinks({applink, project, githublink}) {
+const ProjectLinks = ({applink, project, githublink}) => {
 	return (<div className='links'>
 		{applink ? <AppLink applink={applink} project={project}/> : ''}
 		{githublink ? <GithubLink githublink={githublink}/> : ''}
 	</div>);
 }
 
-function AppLink({applink, project}) {
+const AppLink = ({applink, project}) => {
 	return (<a className='applink' href={applink}>Check out {project}</a>);
 }
 
-function GithubLink({githublink}) {
+const GithubLink = ({githublink}) => {
 	return (<a className='githublink' href={githublink}><img className='giticon' src='../dist/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus0xEAAC8B.png'/></a>);
 }
 

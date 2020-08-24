@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Subject() {
+const Subject = () => {
 	return (<div>
       <label for="subject">
         <input type="text" name="subject" id="subject" placeholder='Enter your subject here'/>
@@ -8,7 +8,7 @@ function Subject() {
       </div>);
 }
 
-function ReplyEmail() {
+const ReplyEmail = () => {
       return(<div>
         <label for="email">
           <input type="text" name="email" id="email" placeholder='Enter your email address here'/>
@@ -16,7 +16,7 @@ function ReplyEmail() {
         </div>);
 }
 
-function Message() {
+const Message = () => {
 	return(<div>
         <label>Email Body:</label>
         <br/>
@@ -24,26 +24,17 @@ function Message() {
         </div>);
 }
 
-function Submit() {
+const Submit = () => {
 	return(<div>
       <input id='submit' type="submit" name="submit" value="Send"/>
       </div>);
 }
 
-function ExitButton({updateEmailer}) {
-	return(<div className='close' onClick={() => {
-		// add the fade class to the emailer
-		/*
-		const emailer = document.getElementById('emailer');
-		emailer.classList.add('fadeClass');
-		*/
-		// wait for 1 second before deleting emailer component
-		//setTimeout(() => updateEmailer(false), 12000);
-		updateEmailer(false);
-	}}>&times;</div>);
+const ExitButton = ({updateEmailer}) => {
+	return(<div className='close' onClick={() => updateEmailer(false)}>&times;</div>);
 }
 
-export default function Emailer({updateEmailer}) {
+const Emailer = ({updateEmailer}) => {
 	return (<div id='emailContainer'>
 	<div id='emailer'>
 	<ExitButton updateEmailer={updateEmailer}/>
@@ -56,3 +47,5 @@ export default function Emailer({updateEmailer}) {
 	</div>
 	</div>);
 }
+
+export default Emailer;
