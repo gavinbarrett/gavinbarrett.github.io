@@ -31,7 +31,7 @@ const AppLink = ({applink, project}) => {
 }
 
 const GithubLink = ({githublink}) => {
-	return (<a className='githublink' href={githublink}><img className='giticon' src='../dist/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus0xEAAC8B.png'/>{Code}</a>);
+	return (<a className='githublink' href={githublink}><img className='giticon' src='../dist/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus0xEAAC8B.png'/>Code</a>);
 }
 
 export default ProjectCard;
