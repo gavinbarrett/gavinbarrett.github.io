@@ -164,15 +164,19 @@ a {
 
 .githublink {
 	display: flex;
-	width: 3vw;
+	width: 10vw;
 	justify-content: space-evenly;
 	align-items: center;
 	background: #212D40;
 	border-radius: 5px;
-	color: #735D78;
+	color: #EAAC8B;
 }
 
 .applink {
+	display: flex;
+	width: 15vw;
+	justify-content: space-evenly;
+	align-items: center;
 	background: #212D40;
 	border-radius: 5px;
 	color: #EAAC8B;
@@ -536,13 +540,13 @@ and (max-device-width : 667px) {
 
 .githublink {
 	display: flex;
-	width: 7vw;
+	width: 15vw;
 	height: 4vh;
 	justify-content: center;
 	align-items: center;
 	background: #212D40;
 	border-radius: 5px;
-	color: #735D78;
+	color: #EAAC8B;
 }
 
 .applink {
