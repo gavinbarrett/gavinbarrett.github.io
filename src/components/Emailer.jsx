@@ -48,4 +48,6 @@ const Emailer = ({updateEmailer}) => {
 	</div>);
 }
 
-export default Emailer;
+export {
+	Emailer
+}

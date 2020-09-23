@@ -36,4 +36,6 @@ const Footer = ({updateEmailer}) => {
 	</div>);
 }
 
-export default Footer; 
+export {
+	Footer
+}

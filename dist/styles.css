@@ -25,6 +25,10 @@ a {
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 
+.lang:hover {
+	filter: brightness(70%);
+}
+
 #header {
 	width: 100vw;
 	height: 100vh;
@@ -72,7 +76,6 @@ a {
 
 #page {
 	width: 100vw;
-	height: 270vh;
 	display: flex;
 	flex-direction: column;
 	background: #212d40;
@@ -106,7 +109,7 @@ a {
 	justify-content: space-evenly;
 	align-items: center;
 	width: 100vw;
-	height: 170vh;
+	height: 220vh;
 	position: relative;
 }
 
@@ -310,8 +313,8 @@ a {
 	position: absolute;
 }
 @keyframes scrollUp {
-	from { top: 200%; }
-	to { top: 50%; }
+	from { top: 260%; }
+	to { top: 100%; }
 }
 @keyframes scrollDown {
 	from { top: 30%; }
@@ -467,7 +470,7 @@ and (max-device-width : 667px) {
 }
 
 #portblock {
-	height: 400vh;
+	height: 500vh;
 }
 
 #projectcard {

@@ -14,4 +14,6 @@ const Header = ({greeting}) => {
 	</div>);
 }
 
-export default Header;
+export {
+	Header
+}

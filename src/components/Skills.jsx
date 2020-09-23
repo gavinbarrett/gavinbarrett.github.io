@@ -32,4 +32,6 @@ const Skills = () => {
 	</div>);
 }
 
-export default Skills;
+export {
+	Skills
+}
