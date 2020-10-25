@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/GithubPage.jsx");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2361,6 +2361,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Skills\", function() { return Skills; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_tooltip__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-tooltip */ \"./node_modules/react-tooltip/dist/index.es.js\");\n\n\n\nconst Skill = ({\n  skill,\n  exp\n}) => {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"skill\",\n    \"data-tip\": exp\n  }, skill);\n};\n\nconst SkillCategory = ({\n  category\n}) => {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"skillcategory\"\n  }, category);\n};\n\nconst SkillCard = ({\n  skills,\n  exps,\n  category\n}) => {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"skillcard\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SkillCategory, {\n    category: category\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"skilllist\"\n  }, skills.map((skill, index) => {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Skill, {\n      key: index,\n      skill: skill[0],\n      exp: skill[1]\n    });\n  })));\n};\n\nconst Skills = () => {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    id: \"skillcontainer\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"tabheader\"\n  }, 'Skills'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"skills\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SkillCard, {\n    category: 'Languages',\n    skills: [['• Python', '5yrs'], ['• Javascript', '3yrs'], ['• Typescript', '1yr'], ['• Java', '4yrs'], ['• C/C++', '5yrs'], ['• SQL', '2yr'], ['• HTML5', '3yrs'], ['• CSS3/SCSS', '3yrs']]\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SkillCard, {\n    category: 'Libraries',\n    skills: [['• ReactJS/JSX', '3yrs'], ['• React-Router', '1yr'], ['• Express', '2yrs'], ['• Passport', '2yrs'], ['• Flask', '3yrs'], ['• ThreeJS', '1yr'], ['• CannonJS', '1yr']]\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SkillCard, {\n    category: 'Build/Development',\n    skills: [['• NPM/Yarn', '2yrs'], ['• Bash/CLI', '5yrs'], ['• Linux', '5yrs'], ['• Git', '4yrs'], ['• Docker', '1yr'], ['• Webpack', '1yr'], ['• Jest', '1yr'], ['• CI/CD', '1yr']]\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tooltip__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n    className: 'tooltip',\n    backgroundColor: '#355070',\n    textColor: '#EAAC8B'\n  })));\n};\n\n\n\n//# sourceURL=webpack:///./src/components/Skills.jsx?");
+
+/***/ }),
+
+/***/ "./src/sass/style.scss":
+/*!*****************************!*\
+  !*** ./src/sass/style.scss ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/sass/style.scss?");
+
+/***/ }),
+
+/***/ 0:
+/*!********************************************************!*\
+  !*** multi ./src/GithubPage.jsx ./src/sass/style.scss ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ./src/GithubPage.jsx */\"./src/GithubPage.jsx\");\nmodule.exports = __webpack_require__(/*! ./src/sass/style.scss */\"./src/sass/style.scss\");\n\n\n//# sourceURL=webpack:///multi_./src/GithubPage.jsx_./src/sass/style.scss?");
 
 /***/ })
 

@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Header } from './Header';
 import { Skills } from './Skills';
+import { Stack } from './Stack';
 import { Footer } from './Footer';
+import { Donations } from './Donations';
 import { Emailer } from './Emailer';
 import { ProjectCard } from './ProjectCard';
+import './sass/Portfolio.scss';
 
 const Summary = () => {
 	const summary = "I am a full stack developer with a passion for building projects that empower users. I began developing with ReactJS three years ago and have been delighted by its ease of use.";
@@ -14,7 +17,7 @@ const Summary = () => {
 	</div>);
 }
 
-const Table = ({emailer, updateEmailer}) => {
+const Table = ({emailer, updateEmailer, donations, updateDonations}) => {
 	
 	const organon = <img className='image' src='../../dist/organon_demo.gif'/>;
 	const exif_god = <img className='image' src='../../dist/exif.gif'/>;
@@ -46,9 +49,10 @@ const Table = ({emailer, updateEmailer}) => {
 	<ProjectCard project={'Organon'} image={organon} desc={organondesc} applink={'http://organon-engine.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/SL_Engine'} lang={python} langdesc={'Python3'}/>
 	<ProjectCard project={'Secret Fracture'} image={secretfracture} desc={secretdesc} applink={'http://secret-fracture.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/share-a-byte'} lang={node} langdesc={'Node.js'}/>
 	<ProjectCard project={'ProtoPhile'} image={protophile} desc={protophiledesc} applink={'https://github.com/gavinbarrett/ProtoPhile/'} githublink={'https://github.com/gavinbarrett/ProtoPhile/'} lang={python} langdesc={'Python3'}/>
-	<ProjectCard project={'MakePy'} image={null} desc={makepydesc} applink={'https://github.com/gavinbarrett/MakePy/'} githublink={'https://github.com/gavinbarrett/MakePy/'} lang={python} langdesc={'Python3'}/>
-	<ProjectCard project={'Conjure-React'} image={null} desc={conjuredesc} applink={'https://github.com/gavinbarrett/app-reaction/'} githublink={'https://github.com/gavinbarrett/app-reaction/'} lang={shell} langdesc={'Bash'}/>
+	{/*<ProjectCard project={'MakePy'} image={null} desc={makepydesc} applink={'https://github.com/gavinbarrett/MakePy/'} githublink={'https://github.com/gavinbarrett/MakePy/'} lang={python} langdesc={'Python3'}/>
+	<ProjectCard project={'Conjure-React'} image={null} desc={conjuredesc} applink={'https://github.com/gavinbarrett/app-reaction/'} githublink={'https://github.com/gavinbarrett/app-reaction/'} lang={shell} langdesc={'Bash'}/>*/}
 	{/*<ProjectCard project={'Repeat Key Buster'} image={null} desc={repeatdesc} applink={'https://github.com/gavinbarrett/RepeatKeyBuster'} githublink={'https://github.com/gavinbarrett/RepeatKeyBuster'} lang={python} langdesc={'Python3'}/>*/}
+	{donations ? <Donations updateDonations={updateDonations}/> : ''}
 	{emailer ? <Emailer updateEmailer={updateEmailer}/> : ''}
 	</div>
 	</div>);
@@ -56,6 +60,7 @@ const Table = ({emailer, updateEmailer}) => {
 
 const Portfolio = (props) => {
 	const [emailer, updateEmailer] = useState(null);
+	const [donations, updateDonations] = useState(null);
 
 	useEffect(() => {
 		// focus on the header after the initial render
@@ -67,8 +72,8 @@ const Portfolio = (props) => {
 	<div id='page'>
 		<Summary/>
 		<Skills/>
-		<Table emailer={emailer} updateEmailer={updateEmailer}/>
-		<Footer updateEmailer={updateEmailer}/>
+		<Table emailer={emailer} updateEmailer={updateEmailer} donations={donations} updateDonations={updateDonations}/>
+		<Footer updateEmailer={updateEmailer} updateDonations={updateDonations}/>
 	</div>
 	</div>);
 }

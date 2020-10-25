@@ -1,0 +1,101 @@
+$page_color2: #0e0f1f;
+$page_color1: #212d40;
+$page_color: #D1D1D1;
+
+@media (min-aspect-ratio: 9/16) {
+
+#summary {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #364156;
+	font-size: 4vw;
+	width: 100vw;
+	height: 50vh;
+	color: #EAAC8B;
+	font-family: 'Baloo Bhai 2';
+}
+
+#summarytextbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80vw;
+	height: 30vh;
+	top: 10%;
+	text-align: center;
+}
+
+#portblock {
+}
+
+.tabheader {
+	font-size: 4vw;
+	font-family: 'Ubuntu', sans-serif;
+	color: #7d4e57;
+	margin-left: 3vw;
+}
+
+#table {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+}
+
+#page {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	background: $page_color2;
+}
+}
+
+@media (min-aspect-ratio: 16/9) {
+
+#summary {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #364156;
+	font-size: 2vw;
+	width: 100vw;
+	height: 30vh;
+	color: #EAAC8B;
+	font-family: 'Baloo Bhai 2';
+}
+
+#summarytextbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80vw;
+	height: 30vh;
+	top: 10%;
+	text-align: center;
+}
+
+.tabheader {
+	font-size: 4vw;
+	font-family: 'Ubuntu', sans-serif;
+	color: #7d4e57;
+	margin-left: 3vw;
+}
+
+#table {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100vw;
+	position: relative;
+}
+
+#page {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	background: $page_color2;
+}
+}

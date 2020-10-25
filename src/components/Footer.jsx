@@ -1,4 +1,5 @@
 import React from 'react';
+import './sass/Footer.scss';
 
 const GithubLink = ({link}) => {
 	return (<div id='footerghl'><a href={link}>
@@ -28,10 +29,18 @@ const EmailLink = ({address, updateEmailer}) => {
 	</div>);
 }
 
-const Footer = ({updateEmailer}) => {
-	return (<div id='footer'>
+const DonateLink = ({updateDonations}) => {
+	return (<div id="footerdl" onClick={() => updateDonations(true)}>
+		Donate
+		<img id="footerdonate" src="../dist/money.png"/>
+	</div>);
+}
+
+const Footer = ({updateEmailer, updateDonations}) => {
+	return (<div id="footer">
 		<GithubLink link={'https://github.com/gavinbarrett'}/>
 		<LinkedInLink link={'https://www.linkedin.com/in/gavin-barrett-3802a9121/'}/>
+		<DonateLink updateDonations={updateDonations}/>
 		<EmailLink address={'gavinbrrtt@gmail.com'} updateEmailer={updateEmailer}/>
 	</div>);
 }

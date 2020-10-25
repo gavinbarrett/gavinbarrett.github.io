@@ -1,5 +1,6 @@
 import React from 'react';
 import TypeWriter from 'react-typewriter';
+import './sass/Header.scss';
 
 const Intro = ({greeting}) => {
 	return (<div id='name'>

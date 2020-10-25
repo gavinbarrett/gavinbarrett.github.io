@@ -1,4 +1,5 @@
 import React from 'react';
+import './sass/Emailer.scss';
 
 const Subject = () => {
 	return (<div>

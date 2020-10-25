@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactTooltip from 'react-tooltip';
+import './sass/Skills.scss';
 
 const Skill = ({skill, exp}) => {
 	return (<div className='skill' data-tip={exp}>{skill}</div>)

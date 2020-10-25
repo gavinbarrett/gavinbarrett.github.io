@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactTooltip from 'react-tooltip';
+import './sass/ProjectCard.scss';
 
 const ProjectCard = ({applink, githublink, project, image, desc, lang, langdesc}) => {
 	return (<div id="projectcard">
