@@ -14,7 +14,7 @@ const ProjectCard = ({applink, githublink, project, image, desc, lang, langdesc,
 
 const ProjectDescription = ({desc, applink, githublink, project}) => {
 	return (<div className='desc'>
-		{desc}
+		<div className="descbox">{desc}</div>
 		<div className='links'>
 			{applink ? <AppLink applink={applink} project={project}/> : ''}
 			{githublink ? <GithubLink githublink={githublink}/> : ''}
@@ -33,7 +33,7 @@ const ProjectStack = ({lang, langdesc, fe, styles}) => {
 	return (<div className='projectstack'>
 		<img className="lang" src={lang} data-tip={langdesc} width="35px" height="35px"/>
 		<img className="lang" src={fe} width="45px" height="45px"/>
-		<img className="lang" src={styles} width="42px" height="42px"/>
+		{styles ? <img className="lang" src={styles} width="42px" height="42px"/> : ''}
 	</div>);
 }
 
