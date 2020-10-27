@@ -1,4 +1,5 @@
 import React from 'react';
+import { Footer } from './Footer';
 import './sass/Donations.scss'
 
 const Donations = () => {
@@ -7,10 +8,13 @@ const Donations = () => {
 	const cashapp = '$GavinABarrett';
 	const bitcoin = '164nV9ek3FpQRXFPakL6kS9ub4CmvfY2S3';
 
-	return (<div id="donationlinks">
-		Venmo: {venmo}
-		CashApp: {cashapp}
-		Bitcoin: {bitcoin}
+	return (<div className="donations">
+	<div className="donationlinks">
+		<p className="payment">Venmo: {venmo}</p>
+		<p className="payment">CashApp: {cashapp}</p>
+		<p className="payment">Bitcoin: {bitcoin}</p>
+	</div>
+	<Footer/>
 	</div>);
 }
 

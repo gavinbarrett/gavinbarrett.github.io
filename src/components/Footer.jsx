@@ -1,8 +1,9 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import './sass/Footer.scss';
 
 const GithubLink = ({link}) => {
-	return (<div id='footerghl'><a href={link}>
+	return (<div className='footerghl footerlink'><a href={link}>
 	GitHub
 	<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#e56b6f" fill="none" stroke-linecap="round" stroke-linejoin="round">
   	<path stroke="none" d="M0 0h24v24H0z"/>
@@ -12,14 +13,14 @@ const GithubLink = ({link}) => {
 }
 
 const LinkedInLink = ({link}) => {
-	return (<div id='footerlil'><a href={link}>
+	return (<div className='footerlil footerlink'><a href={link}>
 	Linked
-	<img id='footerlinkedicon' src='../dist/linkedcolor.png'/>
+	<img className='footerlinkedicon' src='../dist/linkedcolor.png'/>
 	</a></div>);
 }
 
-const EmailLink = ({address, updateEmailer}) => {
-	return (<div id='footerel' onClick={() => updateEmailer(true)}>
+const EmailLink = ({address, history}) => {
+	return (<div className='footerel' onClick={() => history.push('/contact') }>
 	Contact Me
 	<svg id='footermailicon' xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" viewBox="0 0 24 24" stroke-width="1.5" stroke="#e56b6f" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -29,19 +30,30 @@ const EmailLink = ({address, updateEmailer}) => {
 	</div>);
 }
 
-const DonateLink = ({updateDonations}) => {
-	return (<div id="footerdl" onClick={() => updateDonations(true)}>
+const DonateLink = ({history}) => {
+	return (<div className="footerdl" onClick={() => history.push('/donate')}>
 		Donate
-		<img id="footerdonate" src="../dist/money.png"/>
+		<img className="footerdonate" src="../dist/money.png"/>
 	</div>);
 }
 
-const Footer = ({updateEmailer, updateDonations}) => {
-	return (<div id="footer">
+const HomeLink = ({history}) => {
+	return (<div className="home" onClick={() => history.push('/')}>
+		Home
+		<img className="homeicon" src="../dist/home.png"/>
+	</div>);
+}
+
+const Footer = () => {
+	
+	const history = useHistory();
+
+	return (<div className="footer">
+		<HomeLink history={history}/>
 		<GithubLink link={'https://github.com/gavinbarrett'}/>
 		<LinkedInLink link={'https://www.linkedin.com/in/gavin-barrett-3802a9121/'}/>
-		<DonateLink updateDonations={updateDonations}/>
-		<EmailLink address={'gavinbrrtt@gmail.com'} updateEmailer={updateEmailer}/>
+		<DonateLink history={history}/>
+		<EmailLink address={'gavinbrrtt@gmail.com'} history={history}/>
 	</div>);
 }
 

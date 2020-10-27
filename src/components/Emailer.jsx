@@ -31,14 +31,9 @@ const Submit = () => {
       </div>);
 }
 
-const ExitButton = ({updateEmailer}) => {
-	return(<div className='close' onClick={() => updateEmailer(false)}>&times;</div>);
-}
-
 const Emailer = ({updateEmailer}) => {
 	return (<div id='emailContainer'>
 	<div id='emailer'>
-	<ExitButton updateEmailer={updateEmailer}/>
     <form action="https://formspree.io/xknqyrkd" method="POST">
     <Subject/>
 	<ReplyEmail/>

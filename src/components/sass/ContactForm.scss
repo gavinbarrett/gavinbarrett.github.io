@@ -1,0 +1,35 @@
+@media (min-aspect-ratio: 9/16) {
+
+.contact {
+	width: 100vw;
+	height: 100vh;
+}
+
+.contactform {
+	width: 100vw;
+	height: 85vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url(./assets/computercode.jpg);
+}
+}
+
+@media (min-aspect-ratio: 16/9) {
+
+.contact {
+	width: 100vw;
+	height: 100vh;
+}
+
+.contactform {
+	width: 100vw;
+	height: 85vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url(./assets/computercode.jpg);
+}
+}

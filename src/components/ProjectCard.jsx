@@ -2,30 +2,38 @@ import React from 'react';
 import ReactTooltip from 'react-tooltip';
 import './sass/ProjectCard.scss';
 
-const ProjectCard = ({applink, githublink, project, image, desc, lang, langdesc}) => {
+const ProjectCard = ({applink, githublink, project, image, desc, lang, langdesc, fe, styles}) => {
 	return (<div id="projectcard">
 		<div id='projecttitle'>{project}</div>
 		<div id='projectsnippet'>
-		<ProjectDescription desc={desc}/>
-		<ProjectImage image={image}/>
+		<ProjectDescription desc={desc} applink={applink} githublink={githublink} project={project}/>
+		<ProjectImage image={image} lang={lang} langdesc={langdesc} fe={fe} styles={styles}/>
 		</div>
-		<ProjectLinks applink={applink} githublink={githublink} project={project} lang={lang} langdesc={langdesc}/>
 	</div>);
 }
 
-const ProjectDescription = ({desc}) => {
-	return (<div className='desc'>{desc}</div>);
+const ProjectDescription = ({desc, applink, githublink, project}) => {
+	return (<div className='desc'>
+		{desc}
+		<div className='links'>
+			{applink ? <AppLink applink={applink} project={project}/> : ''}
+			{githublink ? <GithubLink githublink={githublink}/> : ''}
+		</div>
+	</div>);
 }
 
-const ProjectImage = ({image}) => {
-	return (<div id='projectimage'>{image}</div>);
+const ProjectImage = ({image, lang, langdesc, fe, styles}) => {
+	return (<div id='projectimage'>
+		{image}
+		<ProjectStack lang={lang} langdesc={langdesc} fe={fe} styles={styles}/>
+	</div>);
 }
 
-const ProjectLinks = ({applink, project, githublink, lang, langdesc}) => {
-	return (<div className='links'>
-		{applink ? <AppLink applink={applink} project={project}/> : ''}
-		{githublink ? <GithubLink githublink={githublink}/> : ''}
+const ProjectStack = ({lang, langdesc, fe, styles}) => {
+	return (<div className='projectstack'>
 		<img className="lang" src={lang} data-tip={langdesc} width="35px" height="35px"/>
+		<img className="lang" src={fe} width="45px" height="45px"/>
+		<img className="lang" src={styles} width="42px" height="42px"/>
 	</div>);
 }
 

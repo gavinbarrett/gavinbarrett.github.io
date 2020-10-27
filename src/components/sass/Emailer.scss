@@ -25,7 +25,6 @@
 
 #emailer {
 	display: flex;
-	position: absolute;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -33,10 +32,6 @@
 	height: 60vh;
 	background: white;
 	border-radius: 5px;
-	top: 300%;
-	animation-name: scrollUp;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
 }
 
 #emailContainer {
@@ -90,7 +85,6 @@ textarea {
 }
 
 #emailer {
-	position: absolute;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -99,10 +93,6 @@ textarea {
 	height: 80vh;
 	background: white;
 	border-radius: 5px;
-	top: 100%;
-	animation-name: scrollUp;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
 }
 
 #emailContainer {
@@ -145,9 +135,4 @@ input[type=text] {
 	border: 0;
 	border-radius: 10px;
 	box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
-}
-
-@keyframes scrollUp {
-	from { top: 260%; }
-	to { top: 100%; }
 }
