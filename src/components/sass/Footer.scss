@@ -1,5 +1,5 @@
-a:link {
-	text-decoration: none;	
+.a:link {
+	text-decoration: none!important;	
 }
 
 @media all and (orientation:portrait) {
@@ -32,6 +32,10 @@ a:link {
 	justify-content: space-evenly;
 	align-items: center;
 	margin-right: 4%;
+	text-decoration: none;
+}
+
+.footerlil:hover {
 	text-decoration: none;
 }
 
@@ -119,6 +123,10 @@ a:link {
 	cursor: pointer;
 }
 
+.footerlil:hover {
+	text-decoration: none;
+}
+
 .footerel {
 	display: flex;
 	justify-content: space-evenly;
@@ -165,7 +173,7 @@ a:link {
 }
 
 .footerdonate {
-	height: 18px;
-	width: 18px;
+	height: 10px;
+	width: 10px;
 }
 }

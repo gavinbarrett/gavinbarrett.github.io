@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 import './sass/Footer.scss';
 
 const GithubLink = ({link}) => {
-	return (<div className='footerghl footerlink'><a href={link}>
+	return (<div className='footerghl'><a className='footerlink' href={link}>
 	GitHub
 	<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#e56b6f" fill="none" stroke-linecap="round" stroke-linejoin="round">
   	<path stroke="none" d="M0 0h24v24H0z"/>
@@ -13,7 +13,7 @@ const GithubLink = ({link}) => {
 }
 
 const LinkedInLink = ({link}) => {
-	return (<div className='footerlil footerlink'><a href={link}>
+	return (<div className='footerlil'><a className='footerlink' href={link}>
 	Linked
 	<img className='footerlinkedicon' src='../dist/linkedcolor.png'/>
 	</a></div>);
