@@ -1,5 +1,3 @@
-@media (min-aspect-ratio: 9/16) {
-
 #submit {
 	width: 100%;
 	border: 0;
@@ -55,68 +53,6 @@
 
 .close:hover {
 	opacity: 0.6;
-}
-
-textarea {
-  width:100%;
-  resize: none;
-  padding:15px;
-  border-radius:15px;
-  border:0;
-  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
-}
-}
-
-@media (min-aspect-ratio: 16/9) {
-
-#submit {
-	width: 100%;
-	border: 0;
-	border-radius: 10px;
-	padding: 10px;
-	margin: 5px;
-	background: #364156;
-	color: white;
-	font-size: 1.5vw;
-}
-
-#submit:hover {
-	background: #212D40;
-}
-
-#emailer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 50vw;
-	height: 80vh;
-	background: white;
-	border-radius: 5px;
-}
-
-#emailContainer {
-	display: flex;
-	width: 80vw;
-	height: 60vh;
-	justify-content: center;
-	align-items: flex-start;
-	z-index: 5px;
-	font-family: 'Baloo Bhai 2';
-	position: absolute;
-}
-
-.close {
-	position: absolute;
-	top: 5%;
-	right: 5%;
-	opacity: 0.3;
-	font-size: 2vw;
-}
-
-.close:hover {
-	opacity: 0.6;
-}
 }
 
 textarea {

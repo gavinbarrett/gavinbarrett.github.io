@@ -1,5 +1,3 @@
-@media (min-aspect-ratio: 9/16) {
-
 .donations {
 	display: flex;
 	flex-direction: column;
@@ -20,30 +18,4 @@
 	background: white;
 	color: #EAAC8B;
 	font-family: 'Baloo Bhai 2'
-}
-}
-
-@media (min-aspect-ratio: 16/9) {
-
-.donations {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 100vw;
-	height: 100vh;
-	background-image: url(./assets/computercode.jpg);
-}
-
-.donationlinks {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 80vw;
-	height: 85vh;
-	background: white;
-	color: #EAAC8B;
-	font-family: 'Baloo Bhai 2'
-}
 }
