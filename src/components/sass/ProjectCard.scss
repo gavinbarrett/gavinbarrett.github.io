@@ -1,10 +1,17 @@
+$desktop_w: 2560px;
+$desktop_h: 1440px;
+$laptop_w: 1080px;
+$laptop_h: 720px;
+$tablet_w: 768px;
+$tablet_h: 1024px;
+
 #projectcard {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
-	height: 60vh;
+	height: 70vh;
 	margin-top: 13%;
 	margin-bottom: 13%;
 }
@@ -23,10 +30,10 @@
 
 #projectsnippet {
 	display: flex;
-	@media screen and (min-width: 1026px) {
+	@media (min-width: $tablet_w) {
 		flex-direction: row;
 	}
-	@media screen and (max-width: 1026px) {
+	@media (max-width: $tablet_w) {
 		flex-direction: column-reverse;
 	}
 	width: 95vw;
@@ -41,23 +48,37 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	@media screen and (min-width: 1026px) {
+	@media (min-width: $tablet_w) {
 		width: 50vw;
 		height: 100vh;
 	}
-	@media screen and (max-width: 1026px) {
+	@media (max-width: $tablet_w) {
 		width: 95vw;
-		height: 100vh;
+		height: 50vh;
 	}
 }
 
-.image {
-	width: 45vw;
-	@media screen and (min-width: 1026px) {
+.imagebox {
+	@media (min-width: $tablet_w) {
+		width: 45vw;
 		height: 45vh;
 	}
-	@media screen and (max-width: 1026px) {
-		height: 25vh;
+	@media (max-width: $tablet_w) {
+		width: 95vw;
+	}
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image {
+	@media (min-width: $tablet_w) {
+		width: 45vw;
+		height: 37vh;
+	}
+	@media (max-width: $tablet_w) {
+		width: 60vw;
+		height: 30vh;
 	}
 	border-radius: 7px;
 }
@@ -67,13 +88,13 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	@media screen and (min-width: 1026px) {
+	@media (min-width: $tablet_w) {
 		width: 50vw;
 		height: 100vh;
 	}
-	@media screen and (max-width: 1026px) {
+	@media (max-width: $tablet_w) {
 		width: 95vw;	
-		height: 100vh;
+		height: 30vh;
 	}
 	font-size: 2vw;
 	font-family: 'Baloo Bhai 2';
@@ -81,8 +102,13 @@
 }
 
 .descbox {
-	width: 45vw;
-	height: 45vh;
+	@media (min-width: $tablet_w) {
+		width: 45vw;
+		height: 45vh;
+	}
+	@media (max-width: $tablet_w) {
+		width: 95vw;
+	}
 	display: flex;
 	justify-content: center;
 	align-items: center;

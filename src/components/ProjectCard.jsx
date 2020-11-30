@@ -24,7 +24,9 @@ const ProjectDescription = ({desc, applink, githublink, project}) => {
 
 const ProjectImage = ({image, lang, langdesc, fe, styles}) => {
 	return (<div id='projectimage'>
-		{image}
+		<div className='imagebox'>
+			{image}
+		</div>
 		<ProjectStack lang={lang} langdesc={langdesc} fe={fe} styles={styles}/>
 	</div>);
 }
