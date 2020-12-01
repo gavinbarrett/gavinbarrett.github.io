@@ -4,7 +4,7 @@ $laptop_w: 1366px;
 $laptop_h: 768px;
 $tablet_w: 768px;
 $tablet_h: 1024px;
-$phone_w: 375px;
+$phone_w: 376px;
 $phone_h: 667px;
 
 .projectcard {
@@ -116,20 +116,17 @@ $phone_h: 667px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 70vw;
 	@media (min-width: $tablet_w) {
 		width: 45vw;
-		height: 45vh;
-	}
-	@media (max-width: $tablet_w) {
-		width: 95vw;
-	}
-	@media (max-width: $laptop_w) {
-		width: 30vw;
 		height: 45vh;
 	}
 	@media (max-width: $desktop_w) {
 		width: 30vw;
 		height: 45vh;
+	}
+	@media (max-width: $tablet_w) {
+		width: 95vw;
 	}
 }
 
