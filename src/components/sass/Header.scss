@@ -12,16 +12,20 @@
 }
 
 #arrow {
-	@media screen and (min-width: 500px) {
-		top: 480px;
-	}
-	@media screen and (max-width: 500px) {
-		top: 1200px;
-	}
 	position: absolute;
 	z-index: 3;
 	animation: glow 1.5s ease-in-out infinite alternate;
 	font-size: 8vw;
+	top: 500px;
+	@media (min-width: 375px) {
+		top: 500px;
+	}
+	@media (min-width: 1024px) {
+		top: 550px;
+	}
+	@media (min-width: 1400px) {
+		top: 570px;
+	}
 }
 
 #name {
