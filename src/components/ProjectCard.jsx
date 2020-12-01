@@ -3,9 +3,9 @@ import ReactTooltip from 'react-tooltip';
 import './sass/ProjectCard.scss';
 
 const ProjectCard = ({applink, githublink, project, image, desc, lang, langdesc, fe, styles}) => {
-	return (<div id="projectcard">
-		<div id='projecttitle'>{project}</div>
-		<div id='projectsnippet'>
+	return (<div className="projectcard">
+		<div className='projecttitle'>{project}</div>
+		<div className='projectsnippet'>
 		<ProjectDescription desc={desc} applink={applink} githublink={githublink} project={project}/>
 		<ProjectImage image={image} lang={lang} langdesc={langdesc} fe={fe} styles={styles}/>
 		</div>
@@ -23,7 +23,7 @@ const ProjectDescription = ({desc, applink, githublink, project}) => {
 }
 
 const ProjectImage = ({image, lang, langdesc, fe, styles}) => {
-	return (<div id='projectimage'>
+	return (<div className='projectimage'>
 		<div className='imagebox'>
 			{image}
 		</div>
