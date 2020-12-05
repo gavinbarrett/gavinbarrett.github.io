@@ -1,5 +1,10 @@
-$desktop: 1200px;
-$laptop: 992px;
+$tablet_w: 768px;
+$laptop_w: 1336px;
+$desktop_w: 2560px;
+
+a.footerlink:hover {
+	color: #e56b6f;
+}
 
 .footer {
 	display: flex;
@@ -10,6 +15,15 @@ $laptop: 992px;
 	background: #364156;
 	font-family: 'Baloo Bhai 2';
 	font-size: 2.5vw;
+	@media (min-width: $tablet_w) {
+		font-size: 2vw;
+	}
+	@media (min-width: $laptop_w) {
+		font-size: 1.5vw;
+	}
+	@media (min-width: $desktop_w) {
+		font-size: 2.5vw;
+	}
 }
 
 .footerghl {

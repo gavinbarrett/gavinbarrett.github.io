@@ -4,7 +4,7 @@ $laptop_w: 1366px;
 $laptop_h: 768px;
 $tablet_w: 768px;
 $tablet_h: 1024px;
-$phone_w: 376px;
+$phone_w: 375px;
 $phone_h: 667px;
 
 .projectcard {
@@ -122,7 +122,7 @@ $phone_h: 667px;
 		height: 45vh;
 	}
 	@media (max-width: $desktop_w) {
-		width: 30vw;
+		width: 40vw;
 		height: 45vh;
 	}
 	@media (max-width: $tablet_w) {

@@ -31,16 +31,14 @@ const Submit = () => {
       </div>);
 }
 
-const Emailer = ({updateEmailer}) => {
-	return (<div id='emailContainer'>
-	<div id='emailer'>
+const Emailer = () => {
+	return (<div id='emailer'>
     <form action="https://formspree.io/xknqyrkd" method="POST">
     <Subject/>
 	<ReplyEmail/>
 	<Message/>
 	<Submit/>
 	</form>
-	</div>
 	</div>);
 }
 

@@ -17,7 +17,7 @@ const Summary = () => {
 	</div>);
 }
 
-const Table = ({emailer, updateEmailer, donations, updateDonations}) => {
+const Table = () => {
 	
 	const organon = <img className='image' src='../../dist/organon_demo.gif'/>;
 	const exif_god = <img className='image' src='../../dist/exif.gif'/>;
@@ -46,18 +46,14 @@ const Table = ({emailer, updateEmailer, donations, updateDonations}) => {
 	return (<div id='portblock'>
 	<div className='tabheader'>{'Projects'}</div>
 	<div id='table'>
+	<ProjectCard project={'Organon'} image={organon} desc={organondesc} applink={'http://organon-engine.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/SL_Engine'} lang={python} langdesc={'Python3'} fe={react} styles={css}/>
 	<ProjectCard project={'CA Covid Dash'} image={covdash} desc={covidashdesc} applink={'covid-data-ca.herokuapp.com'} githublink={'https://github.com/gavinbarrett/CACovidDash'} lang={python} langdesc={'Python3'} fe={react} styles={sass}/>
 	<ProjectCard project={'D&Dice'} image={dndice} desc={dndicedesc} applink={'http://d-and-dice.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/DnDice'} lang={node} langdesc={'Node.js'} fe={react} styles={css}/>
 	<ProjectCard project={'Exif God'} image={exif_god} desc={exifdesc} applink={'http://exif-god.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/exif_god'} lang={python} langdesc={'Python3'} fe={react} styles={css}/>
-	<ProjectCard project={'Organon'} image={organon} desc={organondesc} applink={'http://organon-engine.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/SL_Engine'} lang={python} langdesc={'Python3'} fe={react} styles={css}/>
-	<ProjectCard project={'Secret Fracture'} image={secretfracture} desc={secretdesc} applink={'http://secret-fracture.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/share-a-byte'} lang={node} langdesc={'Node.js'} fe={react} styles={css}/>
 	<ProjectCard project={'ProtoPhile'} image={protophile} desc={protophiledesc} applink={'https://github.com/gavinbarrett/ProtoPhile/'} githublink={'https://github.com/gavinbarrett/ProtoPhile/'} lang={python} langdesc={'Python3'} fe={shell} styles={null}/>
-	{/*<ProjectCard project={'MakePy'} image={null} desc={makepydesc} applink={'https://github.com/gavinbarrett/MakePy/'} githublink={'https://github.com/gavinbarrett/MakePy/'} lang={python} langdesc={'Python3'}/>
-	<ProjectCard project={'Conjure-React'} image={null} desc={conjuredesc} applink={'https://github.com/gavinbarrett/app-reaction/'} githublink={'https://github.com/gavinbarrett/app-reaction/'} lang={shell} langdesc={'Bash'}/>*/}
-	{/*<ProjectCard project={'Repeat Key Buster'} image={null} desc={repeatdesc} applink={'https://github.com/gavinbarrett/RepeatKeyBuster'} githublink={'https://github.com/gavinbarrett/RepeatKeyBuster'} lang={python} langdesc={'Python3'}/>*/}
-	{donations ? <Donations updateDonations={updateDonations}/> : ''}
-	{emailer ? <Emailer updateEmailer={updateEmailer}/> : ''}
 	</div>
+	<div className='tabheader'>Contact Me</div>
+	<Emailer/>
 	</div>);
 }
 
@@ -76,7 +72,7 @@ const Portfolio = (props) => {
 	<div id='page'>
 		<Summary/>
 		<Skills/>
-		<Table emailer={emailer} updateEmailer={updateEmailer} donations={donations} updateDonations={updateDonations}/>
+		<Table/>
 		<Footer/>
 	</div>
 	</div>);

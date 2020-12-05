@@ -53,7 +53,6 @@ const Footer = () => {
 		<GithubLink link={'https://github.com/gavinbarrett'}/>
 		<LinkedInLink link={'https://www.linkedin.com/in/gavin-barrett-3802a9121/'}/>
 		<DonateLink history={history}/>
-		<EmailLink address={'gavinbrrtt@gmail.com'} history={history}/>
 	</div>);
 }
 
