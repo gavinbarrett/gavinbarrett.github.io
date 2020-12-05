@@ -33,7 +33,7 @@ const Submit = () => {
 
 const Emailer = () => {
 	return (<div id='emailer'>
-    <form action="https://formspree.io/xknqyrkd" method="POST">
+    <form action="https://formspree.io/xknqyrkd" className='form' method="POST">
     <Subject/>
 	<ReplyEmail/>
 	<Message/>
