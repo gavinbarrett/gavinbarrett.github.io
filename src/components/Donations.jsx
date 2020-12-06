@@ -6,7 +6,7 @@ const Donations = () => {
 
 	const venmo = '@Gavin-Barrett-4';
 	const cashapp = '$GavinABarrett';
-	const bitcoin = '164nV9ek3FpQRXFPakL6kS9ub4CmvfY2S3';
+	const bitcoin = 'xpub6CsfdyCVnEd9ZvhUkhQvfT7U1pm8oha3aqzdwNPkTM1hizninUt5Qytdq8hz7W28YrWyffdStkRgxVGQXGBT5Hcxf7zvw26XK4vB5vQuxdD';
 
 	return (<div className="donations">
 	<div className="donationlinks">
@@ -14,7 +14,6 @@ const Donations = () => {
 		<p className="payment">CashApp: {cashapp}</p>
 		<p className="payment">Bitcoin: {bitcoin}</p>
 	</div>
-	<Footer/>
 	</div>);
 }
 

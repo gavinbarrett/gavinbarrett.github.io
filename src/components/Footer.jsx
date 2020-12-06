@@ -1,5 +1,4 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import './sass/Footer.scss';
 
 const GithubLink = ({link}) => {
@@ -30,30 +29,41 @@ const EmailLink = ({address, history}) => {
 	</div>);
 }
 
-const DonateLink = ({history}) => {
-	return (<div className="footerdl" onClick={() => history.push('/donate')}>
+const DonateLink = ({updateDonations}) => {
+
+	useEffect(() => {
+		const dl = document.getElementById('dl');
+		dl.addEventListener('mouseenter', displayDonations);
+		dl.addEventListener('mouseleave', hideDonations);
+	}, []);
+
+	const displayDonations = () => { updateDonations(true); }
+
+	const hideDonations = () => { updateDonations(false); }
+
+	return (<div id='dl' className="footerdl">
 		Donate
 		<img className="footerdonate" src="../dist/money.png"/>
 	</div>);
 }
 
-const HomeLink = ({history}) => {
-	return (<div className="home" onClick={() => history.push('/')}>
+const HomeLink = () => {
+	return (<div className="home" onClick={() => window.scrollTo(0,0)}>
 		Home
 		<img className="homeicon" src="../dist/home.png"/>
 	</div>);
 }
 
-const Footer = () => {
+const Footer = ({updateDonations}) => {
 	
-	const history = useHistory();
-
-	return (<div className="footer">
-		<HomeLink history={history}/>
+	return (<footer>
+	<div className='footer'>
+		<HomeLink/>
 		<GithubLink link={'https://github.com/gavinbarrett'}/>
 		<LinkedInLink link={'https://www.linkedin.com/in/gavin-barrett-3802a9121/'}/>
-		<DonateLink history={history}/>
-	</div>);
+		<DonateLink updateDonations={updateDonations}/>
+	</div>
+	</footer>);
 }
 
 export {

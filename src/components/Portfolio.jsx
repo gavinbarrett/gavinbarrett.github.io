@@ -17,7 +17,7 @@ const Summary = () => {
 	</div>);
 }
 
-const Table = () => {
+const Table = ({donations}) => {
 	
 	const organon = <img className='image' src='../../dist/organon_demo.gif'/>;
 	const exif_god = <img className='image' src='../../dist/exif.gif'/>;
@@ -53,6 +53,7 @@ const Table = () => {
 	<ProjectCard project={'ProtoPhile'} image={protophile} desc={protophiledesc} applink={'https://github.com/gavinbarrett/ProtoPhile/'} githublink={'https://github.com/gavinbarrett/ProtoPhile/'} lang={python} langdesc={'Python3'} fe={shell} styles={null}/>
 	</div>
 	<div className='tabheader'>Contact Me</div>
+	{donations ? <Donations/> : ''}
 	<Emailer/>
 	</div>);
 }
@@ -72,8 +73,8 @@ const Portfolio = (props) => {
 	<div id='page'>
 		<Summary/>
 		<Skills/>
-		<Table/>
-		<Footer/>
+		<Table donations={donations}/>
+		<Footer updateDonations={updateDonations}/>
 	</div>
 	</div>);
 }
