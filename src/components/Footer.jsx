@@ -34,12 +34,15 @@ const DonateLink = ({updateDonations}) => {
 	useEffect(() => {
 		const dl = document.getElementById('dl');
 		dl.addEventListener('mouseenter', displayDonations);
-		dl.addEventListener('mouseleave', hideDonations);
 	}, []);
 
-	const displayDonations = () => { updateDonations(true); }
-
-	const hideDonations = () => { updateDonations(false); }
+	const displayDonations = () => { 
+		updateDonations(true);
+		const dl = document.getElementById('dl');
+		dl.removeEventListener('mouseenter', displayDonations);
+		const dc = document.getElementById('dc');
+		dc.addEventListener('mouseleave', updateDonations(false));
+	}
 
 	return (<div id='dl' className="footerdl">
 		Donate
