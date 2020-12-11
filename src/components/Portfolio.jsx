@@ -23,7 +23,7 @@ const Table = ({donations, updateDonations}) => {
 	const exif_god = <img className='image' src='../../dist/exif.gif'/>;
 	const secretfracture = <img className='image' src='../../dist/secret.gif'/>;
 	const dndice = <img className='image' src='../../dist/dndice.gif'/>;
-	const covdash = <img className='image' src='../../dist/covidash.gif'/>;
+	const covdash = <img className='image' src='../../dist/coviddash.png'/>;
 	const protophile = <img className='image' src='../../dist/protophile.gif'/>
 
 	const exifdesc = 'Exif God is a simple utility for viewing and removing image metadata.';
