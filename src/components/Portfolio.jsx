@@ -48,7 +48,7 @@ const Table = ({donations, updateDonations}) => {
 	<div id='table'>
 	<ProjectCard project={'Organon'} image={organon} desc={organondesc} applink={'http://organon-engine.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/SL_Engine'} lang={python} langdesc={'Python3'} fe={react} styles={css}/>
 	<ProjectCard project={'CA Covid Dash'} image={covdash} desc={covidashdesc} applink={'https://coviddash.site'} githublink={'https://github.com/gavinbarrett/CACovidDash'} lang={python} langdesc={'Python3'} fe={react} styles={sass}/>
-	<ProjectCard project={'D&Dice'} image={dndice} desc={dndicedesc} applink={'http://d-and-dice.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/DnDice'} lang={node} langdesc={'Node.js'} fe={react} styles={css}/>
+	<ProjectCard project={'D&Dice'} image={dndice} desc={dndicedesc} applink={'https://dndice.site/'} githublink={'https://github.com/gavinbarrett/DnDice'} lang={node} langdesc={'Node.js'} fe={react} styles={css}/>
 	<ProjectCard project={'Exif God'} image={exif_god} desc={exifdesc} applink={'http://exif-god.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/exif_god'} lang={python} langdesc={'Python3'} fe={react} styles={css}/>
 	<ProjectCard project={'ProtoPhile'} image={protophile} desc={protophiledesc} applink={'https://github.com/gavinbarrett/ProtoPhile/'} githublink={'https://github.com/gavinbarrett/ProtoPhile/'} lang={python} langdesc={'Python3'} fe={shell} styles={null}/>
 	</div>
