@@ -9,12 +9,12 @@ const Intro = ({greeting}) => {
 }
 
 const Header = ({greeting}) => {
-	return (<header>
-	<div className='header'>
+	return (<div className='header'>
 		<Intro greeting={greeting}/>
-		<i id='arrow' class="fas fa-chevron-down"/>
-	</div>
-	</header>);
+		<div className='arrowcontainer'>
+			<i class="fas fa-chevron-down arrow"/>
+		</div>
+	</div>);
 }
 
 export {
