@@ -16,6 +16,8 @@ a.gpglink, a.gpglink:hover {
 }
 
 .donationcontainer {
+	display: flex;
+	align-items: flex-end;
 	width: 50vw;
 	height: 85vh;
 }
@@ -40,6 +42,7 @@ a.gpglink, a.gpglink:hover {
 .donatelogo {
 	width: 45px;
 	height: 45px;
+	margin-right: 1vw;
 }
 
 
@@ -63,5 +66,5 @@ a.gpglink, a.gpglink:hover {
 }
 
 .payment {
-	word-break: break-all;
+	width: 45vw;
 }

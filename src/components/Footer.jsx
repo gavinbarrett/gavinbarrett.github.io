@@ -2,6 +2,14 @@ import React, { useEffect } from 'react';
 import { Donations } from './Donations';
 import './sass/Footer.scss';
 
+const HomeLink = () => {
+	// scroll to the top smoothly
+	return (<div className="home" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>
+		Home
+		<img className="homeicon" src="../dist/home.png"/>
+	</div>);
+}
+
 const GithubLink = ({link}) => {
 	return (<div className='footerghl'><a className='footerlink' href={link}>
 	GitHub
@@ -19,6 +27,30 @@ const LinkedInLink = ({link}) => {
 	</a></div>);
 }
 
+const DonateLink = ({updateDonations}) => {
+
+	useEffect(() => {
+		const dl = document.getElementById('dl');
+		dl.addEventListener('mouseenter', displayDonations);
+		//const dc = document.getElementById('dc');
+		dl.addEventListener('mouseleave', hideDonations);
+	}, []);
+
+	const hideDonations = () => { updateDonations(false); }
+
+	const displayDonations = () => { updateDonations(true); }
+
+	//const dl = document.getElementById('dl');
+	//dl.removeEventListener('mouseenter', displayDonations);
+	//const dc = document.getElementById('dc');
+	//dc.addEventListener('mouseleave', hideDonations);
+
+	return (<div id='dl' className="footerdl">
+		Donate
+		<img className="footerdonate" src="../dist/money.png"/>
+	</div>);
+}
+
 const EmailLink = ({address, history}) => {
 	return (<div className='footerel' onClick={() => history.push('/contact') }>
 	Contact Me
@@ -27,41 +59,6 @@ const EmailLink = ({address, history}) => {
   <rect x="3" y="5" width="18" height="14" rx="2" />
   <polyline points="3 7 12 13 21 7" />
 </svg>
-	</div>);
-}
-
-const DonateLink = ({updateDonations}) => {
-
-	useEffect(() => {
-		const dl = document.getElementById('dl');
-		dl.addEventListener('mouseenter', displayDonations);
-	}, []);
-
-	const hideDonations = () => {
-		console.log('hiding');
-		updateDonations(false);
-	}
-
-	const displayDonations = () => { 
-		console.log('entered');
-		updateDonations(true);
-		//const dl = document.getElementById('dl');
-		//dl.removeEventListener('mouseenter', displayDonations);
-		const dc = document.getElementById('dc');
-		dc.addEventListener('mouseleave', hideDonations);
-	}
-
-	return (<div id='dl' className="footerdl">
-		Donate
-		<img className="footerdonate" src="../dist/money.png"/>
-	</div>);
-}
-
-const HomeLink = () => {
-	// scroll to the top smoothly
-	return (<div className="home" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>
-		Home
-		<img className="homeicon" src="../dist/home.png"/>
 	</div>);
 }
 
