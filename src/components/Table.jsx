@@ -4,7 +4,6 @@ import { Donations } from './Donations';
 import { Emailer } from './Emailer';
 import './sass/Table.scss';
 
-
 const Table = ({donations, updateDonations}) => {
 	
 	const organon = <img className='image' src='../../dist/organon_demo.gif'/>;
@@ -13,6 +12,8 @@ const Table = ({donations, updateDonations}) => {
 	const dndice = <img className='image' src='../../dist/dndice.gif'/>;
 	const covdash = <img className='image' src='../../dist/coviddash.png'/>;
 	const protophile = <img className='image' src='../../dist/protophile.gif'/>
+	const bipsuite = <img className='image' src='../../dist/bipsuite.png'/>
+	const philsource = <img className='image' src='../../dist/philsource.png'/>
 
 	const exifdesc = 'Exif God is a simple utility for viewing and removing image metadata.';
 	const organondesc = 'Organon is a logic analyzer that determines whether arguments in propositional logic are valid.';
@@ -23,6 +24,8 @@ const Table = ({donations, updateDonations}) => {
 	const makepydesc = 'MakePy is a CLI tool for building Makefiles for C/C++ programs.';
 	const conjuredesc = 'Conjure-React is a shell script used for setting up React projects with either Python or Node as a backend.';
 	const repeatdesc = 'This is a utility to recover the symmetric key and plaintext of a message encrypted with a two-time pad.';
+	const bipdesc = 'Bip Suite is an implementation of the BIP32/BIP39 protocol for generating and managing Bitcoin HD wallets. Currently, the program can generate cryptographically secure BIP32 mnemonic seeds and derive the associated BIP39 extended key pair associated with that seed.';
+	const phildesc = 'PhilSource is a web archive for philosophical texts that supports document searching and community interaction.'
 
 	const shell = '../../dist/shelllogo.png';
 	const node = '../../dist/nodelogo.png';
@@ -34,11 +37,13 @@ const Table = ({donations, updateDonations}) => {
 	return (<div id='portblock'>
 	<div className='tabheader'>{'Projects'}</div>
 	<div id='table'>
-	<ProjectCard project={'Organon'} image={organon} desc={organondesc} applink={'http://organon-engine.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/SL_Engine'} lang={python} langdesc={'Python3'} fe={react} styles={css}/>
+	<ProjectCard project={'Philsource'} image={philsource} desc={phildesc} applink={'https://github.com/gavinbarrett/PhilSource'} githublink={'https://github.com/gavinbarrett/PhilSource'} lang={node} langdesc={'Node.js'} fe={react} styles={sass}/>
 	<ProjectCard project={'CA Covid Dash'} image={covdash} desc={covidashdesc} applink={'https://coviddash.site'} githublink={'https://github.com/gavinbarrett/CACovidDash'} lang={python} langdesc={'Python3'} fe={react} styles={sass}/>
+	<ProjectCard project={'Organon'} image={organon} desc={organondesc} applink={'http://organon-engine.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/SL_Engine'} lang={python} langdesc={'Python3'} fe={react} styles={css}/>
 	<ProjectCard project={'D&Dice'} image={dndice} desc={dndicedesc} applink={'https://dndice.site/'} githublink={'https://github.com/gavinbarrett/DnDice'} lang={node} langdesc={'Node.js'} fe={react} styles={css}/>
 	<ProjectCard project={'Exif God'} image={exif_god} desc={exifdesc} applink={'http://exif-god.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/exif_god'} lang={python} langdesc={'Python3'} fe={react} styles={css}/>
 	<ProjectCard project={'ProtoPhile'} image={protophile} desc={protophiledesc} applink={'https://github.com/gavinbarrett/ProtoPhile/'} githublink={'https://github.com/gavinbarrett/ProtoPhile/'} lang={python} langdesc={'Python3'} fe={shell} styles={null}/>
+	<ProjectCard project={'Bip Suite'} image={null} desc={bipdesc} applink={'https://github.com/gavinbarrett/BIP39_Suite/'} githublink={'https://github.com/gavinbarrett/BIP39_Suite/'} image={bipsuite} lang={python} langdesc={'Python3'} fe={shell} styles={null}/>
 	</div>
 	<div className='tabheader'>Contact Me</div>
 	{donations ? <Donations updateDonations={updateDonations}/> : ''}

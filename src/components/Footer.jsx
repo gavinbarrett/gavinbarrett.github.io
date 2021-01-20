@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Donations } from './Donations';
 import './sass/Footer.scss';
 
 const GithubLink = ({link}) => {
@@ -36,12 +37,18 @@ const DonateLink = ({updateDonations}) => {
 		dl.addEventListener('mouseenter', displayDonations);
 	}, []);
 
+	const hideDonations = () => {
+		console.log('hiding');
+		updateDonations(false);
+	}
+
 	const displayDonations = () => { 
+		console.log('entered');
 		updateDonations(true);
-		const dl = document.getElementById('dl');
-		dl.removeEventListener('mouseenter', displayDonations);
+		//const dl = document.getElementById('dl');
+		//dl.removeEventListener('mouseenter', displayDonations);
 		const dc = document.getElementById('dc');
-		dc.addEventListener('mouseleave', updateDonations(false));
+		dc.addEventListener('mouseleave', hideDonations);
 	}
 
 	return (<div id='dl' className="footerdl">
@@ -51,14 +58,14 @@ const DonateLink = ({updateDonations}) => {
 }
 
 const HomeLink = () => {
-	return (<div className="home" onClick={() => window.scrollTo(0,0)}>
+	// scroll to the top smoothly
+	return (<div className="home" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>
 		Home
 		<img className="homeicon" src="../dist/home.png"/>
 	</div>);
 }
 
 const Footer = ({updateDonations}) => {
-	
 	return (<footer>
 	<div className='footer'>
 		<HomeLink/>

@@ -6,7 +6,7 @@ const Donations = ({updateDonations}) => {
 
 	const venmo = '@Gavin-Barrett-4';
 	const cashapp = '$GavinABarrett';
-	const bitcoin = 'xpub6CsfdyCVnEd9ZvhUkhQvfT7U1pm8oha3aqzdwNPkTM1hizninUt5Qytdq8hz7W28YrWyffdStkRgxVGQXGBT5Hcxf7zvw26XK4vB5vQuxdD';
+	const bitcoin = 'address';
 
 	useEffect(() => {
 		// add event listener for mouseleave
@@ -30,10 +30,10 @@ const Donations = ({updateDonations}) => {
 	return (<div className="donations">
 	<div id='dc' className='donationcontainer'>
 	<div className="donationlinks">
-		<p className="payment"><img className='donatelogo' src='../../dist/venmologo.png'/>{venmo}</p>
-		<p className="payment"><img className='donatelogo' src='../../dist/cashapplogo.png'/>{cashapp}</p>
-		<p className="payment"><img className='donatelogo' src='../../dist/bitcoinlogo.png'/>{bitcoin}<p className='copykey' onClick={copyPubkey}>Copy Key <img className='clipboard' src='../../dist/clipboard_e56b6f_4.png'/></p></p>
-		<p><a className='gpglink' href='../../dist/pubkey.asc' download><img className='gpgkey' src='../../dist/keylogo_e56b6f.png'/>GPG Key</a></p>
+		<div className="payment"><img className='donatelogo' src='../../dist/venmologo.png'/>{venmo}</div>
+		<div className="payment"><img className='donatelogo' src='../../dist/cashapplogo.png'/>{cashapp}</div>
+		<div className="payment"><img className='donatelogo' src='../../dist/bitcoinlogo.png'/>{bitcoin}<div className='copykey' onClick={copyPubkey}>Copy Key <img className='clipboard' src='../../dist/clipboard_e56b6f_4.png'/></div></div>
+		<div><a className='gpglink' href='../../dist/pubkey.asc' download><img className='gpgkey' src='../../dist/keylogo_e56b6f.png'/>GPG Key</a></div>
 	</div>
 	</div>
 	</div>);
