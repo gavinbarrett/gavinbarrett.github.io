@@ -25,7 +25,7 @@ const Table = ({donations, updateDonations}) => {
 	const conjuredesc = 'Conjure-React is a shell script used for setting up React projects with either Python or Node as a backend.';
 	const repeatdesc = 'This is a utility to recover the symmetric key and plaintext of a message encrypted with a two-time pad.';
 	const bipdesc = 'Bip Suite is an implementation of the BIP32/BIP39 protocol for generating and managing Bitcoin HD wallets. Currently, the program can generate cryptographically secure BIP32 mnemonic seeds and derive the associated BIP39 extended key pair associated with that seed.';
-	const phildesc = 'PhilSource is a web archive for philosophical texts that supports document searching and community interaction.'
+	const phildesc = 'PhiloSource is a web archive for philosophical texts that supports document searching and community interaction.'
 
 	const shell = '../../dist/shelllogo.png';
 	const node = '../../dist/nodelogo.png';
@@ -37,7 +37,7 @@ const Table = ({donations, updateDonations}) => {
 	return (<div id='portblock'>
 	<div className='tabheader'>{'Projects'}</div>
 	<div id='table'>
-	<ProjectCard project={'Philsource'} image={philsource} desc={phildesc} applink={'https://github.com/gavinbarrett/PhilSource'} githublink={'https://github.com/gavinbarrett/PhilSource'} lang={node} langdesc={'Node.js'} fe={react} styles={sass}/>
+	<ProjectCard project={'PhiloSource'} image={philsource} desc={phildesc} applink={'https://github.com/gavinbarrett/PhilSource'} githublink={'https://github.com/gavinbarrett/PhilSource'} lang={node} langdesc={'Node.js'} fe={react} styles={sass}/>
 	<ProjectCard project={'CA Covid Dash'} image={covdash} desc={covidashdesc} applink={'https://coviddash.site'} githublink={'https://github.com/gavinbarrett/CACovidDash'} lang={python} langdesc={'Python3'} fe={react} styles={sass}/>
 	<ProjectCard project={'Organon'} image={organon} desc={organondesc} applink={'http://organon-engine.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/SL_Engine'} lang={python} langdesc={'Python3'} fe={react} styles={css}/>
 	<ProjectCard project={'D&Dice'} image={dndice} desc={dndicedesc} applink={'https://dndice.site/'} githublink={'https://github.com/gavinbarrett/DnDice'} lang={node} langdesc={'Node.js'} fe={react} styles={css}/>
