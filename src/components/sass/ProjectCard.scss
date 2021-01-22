@@ -211,7 +211,15 @@ $phone_w: 375px;
 }
 
 .lang:hover {
-	filter: brightness(70%);
+	animation-name: dimPic;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+
+@keyframes dimPic {
+	from { filter: brightness(100%); }
+	to { filter: brightness(60%); }
 }
 
 .giticon {
