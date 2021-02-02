@@ -7,13 +7,13 @@ import './sass/Stack.scss';
 const Stack = () => {
 	return (<div className="stack">
 		<div>
-			<img className="stackitem" src={ReactLogo}/>
+			<img className="stackitem" loading='lazy' src={ReactLogo}/>
 		</div>
 		<div>
-			<img className="stackitem" src={NodeLogo}/>
+			<img className="stackitem" loading='lazy' src={NodeLogo}/>
 		</div>
 		<div>
-			<img className="stackitem" src={PostLogo}/>
+			<img className="stackitem" loading='lazy' src={PostLogo}/>
 		</div>
 	</div>);
 }

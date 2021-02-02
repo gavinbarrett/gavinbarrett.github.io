@@ -7,14 +7,14 @@ import './sass/Table.scss';
 const Table = ({donations, updateDonations}) => {
 	
 	// project image/gif paths
-	const organon = <img className='image' src='../../dist/organon_demo.gif'/>;
-	const exif_god = <img className='image' src='../../dist/exif.gif'/>;
-	const secretfracture = <img className='image' src='../../dist/secret.gif'/>;
-	const dndice = <img className='image' src='../../dist/dndice.gif'/>;
-	const covdash = <img className='image' src='../../dist/coviddash.png'/>;
-	const protophile = <img className='image' src='../../dist/protophile.gif'/>
-	const bipsuite = <img className='image' src='../../dist/bipsuite.png'/>
-	const philsource = <img className='image' src='../../dist/philsource.png'/>
+	const organon = <img className='image' loading='lazy' src='../../dist/organon_demo.gif'/>;
+	const exif_god = <img className='image' loading='lazy' src='../../dist/exif.gif'/>;
+	const secretfracture = <img className='image' loading='lazy' src='../../dist/secret.gif'/>;
+	const dndice = <img className='image' loading='lazy' src='../../dist/dndice.gif'/>;
+	const covdash = <img className='image' loading='lazy' src='../../dist/coviddash.png'/>;
+	const protophile = <img className='image' loading='lazy' src='../../dist/protophile.gif'/>
+	const bipsuite = <img className='image' loading='lazy' src='../../dist/bipsuite.png'/>
+	const philsource = <img className='image' loading='lazy' src='../../dist/philsource.png'/>
 	
 	// stack logo paths
 	const shell = '../../dist/shelllogo.png';

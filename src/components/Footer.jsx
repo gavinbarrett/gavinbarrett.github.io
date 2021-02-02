@@ -6,7 +6,7 @@ const HomeLink = () => {
 	// scroll to the top smoothly
 	return (<div className="home" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>
 		Home
-		<img className="homeicon" src="../dist/home.png"/>
+		<img className='homeicon' loading='lazy' src='../dist/home.png'/>
 	</div>);
 }
 
@@ -23,7 +23,7 @@ const GithubLink = ({link}) => {
 const LinkedInLink = ({link}) => {
 	return (<div className='footerlil'><a className='footerlink' href={link}>
 	Linked
-	<img className='footerlinkedicon' src='../dist/linkedcolor.png'/>
+	<img className='footerlinkedicon' loading='lazy' src='../dist/linkedcolor.png'/>
 	</a></div>);
 }
 
@@ -45,16 +45,16 @@ const DonateLink = ({updateDonations}) => {
 	//const dc = document.getElementById('dc');
 	//dc.addEventListener('mouseleave', hideDonations);
 
-	return (<div id='dl' className="footerdl">
+	return (<div id='dl' className='footerdl'>
 		Donate
-		<img className="footerdonate" src="../dist/money.png"/>
+		<img className='footerdonate' loading='lazy' src='../dist/money.png'/>
 	</div>);
 }
 
 const EmailLink = ({address, history}) => {
 	return (<div className='footerel' onClick={() => history.push('/contact') }>
 	Contact Me
-	<svg id='footermailicon' xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" viewBox="0 0 24 24" stroke-width="1.5" stroke="#e56b6f" fill="none" stroke-linecap="round" stroke-linejoin="round">
+	<svg id='footermailicon' xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-mail' viewBox='0 0 24 24' stroke-width="1.5" stroke="#e56b6f" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <rect x="3" y="5" width="18" height="14" rx="2" />
   <polyline points="3 7 12 13 21 7" />

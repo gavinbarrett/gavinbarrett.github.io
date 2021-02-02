@@ -38,13 +38,13 @@ const ProjectStack = ({lang, langdesc, fe, styles, db}) => {
 	{/* display an array of technologies used to create the project */}
 	return (<div className='projectstack'>
 		{/* back end language for project */}
-		<img className="lang" src={lang} data-tip={langdesc} width="35px" height="35px"/>
+		<img className="lang" src={lang} data-tip={langdesc} loading='lazy' width="35px" height="35px"/>
 		{/* front end for project (React) */}
-		{fe ? <img className="lang" src={fe} width="45px" height="45px"/> : ''}
+		{fe ? <img className="lang" src={fe} loading='lazy' width="45px" height="45px"/> : ''}
 		{/* styling option for project (CSS3/SCSS) */}
-		{styles ? <img className="lang" src={styles} width="42px" height="42px"/> : ''}
+		{styles ? <img className="lang" src={styles} loading='lazy' width="42px" height="42px"/> : ''}
 		{/* database system */}
-		{db ? <img className="lang" src={db} data-tip={langdesc} width="58px" height="54px"/> : ''}
+		{db ? <img className="lang" src={db} data-tip={langdesc} loading='lazy' width="58px" height="54px"/> : ''}
 	</div>);
 }
 
@@ -55,7 +55,7 @@ const AppLink = ({applink, project}) => {
 
 const GithubLink = ({githublink}) => {
 	{/* link to each projects' source code */}
-	return (<a className='githublink' href={githublink}><img className='giticon' src='../dist/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus0xEAAC8B.png'/>Code</a>);
+	return (<a className='githublink' href={githublink}><img className='giticon' loading='lazy' src='../dist/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus0xEAAC8B.png'/>Code</a>);
 }
 
 export {
