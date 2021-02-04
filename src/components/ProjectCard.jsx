@@ -40,11 +40,11 @@ const ProjectStack = ({lang, langdesc, fe, styles, db}) => {
 		{/* back end language for project */}
 		<img className="lang" src={lang} data-tip={langdesc} loading='lazy' width="35px" height="35px"/>
 		{/* front end for project (React) */}
-		{fe ? <img className="lang" src={fe} loading='lazy' width="45px" height="45px"/> : ''}
+		{fe ? <img className="lang" src={fe} loading='lazy' width="48px" height="48px"/> : ''}
 		{/* styling option for project (CSS3/SCSS) */}
 		{styles ? <img className="lang" src={styles} loading='lazy' width="42px" height="42px"/> : ''}
 		{/* database system */}
-		{db ? <img className="lang" src={db} data-tip={langdesc} loading='lazy' width="58px" height="54px"/> : ''}
+		{db ? <img className="lang" src={db} data-tip={langdesc} loading='lazy' width="50px" height="50px"/> : ''}
 	</div>);
 }
 
