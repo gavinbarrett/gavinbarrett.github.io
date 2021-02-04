@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Economica:wght@700&display=swap');
 $desktop_w: 2560px;
 $laptop_w: 1366px;
 $tablet_w: 768px;
@@ -21,7 +22,7 @@ $phone_w: 375px;
 	align-items: center;
 	text-align: center;
 	font-size: 5vw;
-	font-family: 'Encode Sans', sans-serif;
+	font-family: 'Economica', sans-serif;
 	height: 10vh;
 	width: 80vw;
 }
