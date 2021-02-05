@@ -6,14 +6,16 @@ import './sass/Table.scss';
 
 const Table = ({donations, updateDonations}) => {
 	// project image/gif paths
-	const organon = <img className='image' loading='lazy' src='../../dist/organon_demo.gif'/>;
-	const exif_god = <img className='image' loading='lazy' src='../../dist/exif.gif'/>;
-	const secretfracture = <img className='image' loading='lazy' src='../../dist/secret.gif'/>;
-	const dndice = <img className='image' loading='lazy' src='../../dist/dndice.gif'/>;
-	const covdash = <img className='image' loading='lazy' src='../../dist/coviddash.png'/>;
-	const protophile = <img className='image' loading='lazy' src='../../dist/protophile.gif'/>
-	const bipsuite = <img className='image' loading='lazy' src='../../dist/bipsuite.png'/>
-	const philsource = <img className='image' loading='lazy' src='../../dist/philsource.png'/>
+	const organon = <img className='image' src='../../dist/organon_demo.gif'/>;
+	const exif_god = <img className='image' src='../../dist/exif.gif'/>;
+	const secretfracture = <img className='image' src='../../dist/secret.gif'/>;
+	const dndice = <img className='image' src='../../dist/dndice.gif'/>;
+	const covdash = <img className='image' src='../../dist/coviddash.png'/>;
+	const protophile = <img className='image' src='../../dist/protophile.gif'/>
+	const bipsuite = <img className='image' src='../../dist/bipsuite.png'/>
+	const philsource = <img className='image' src='../../dist/philsource.png'/>
+	const cryptoconsole = <img className='image' src='../../dist/cryptoconsole-demo.png'/>
+
 	// stack logo paths
 	const shell = '../../dist/shelllogo.png';
 	const cli = '../../dist/clilogo.png';
@@ -24,6 +26,8 @@ const Table = ({donations, updateDonations}) => {
 	const css = '../../dist/css.png';
 	const psql = '../../dist/post.png';
 	const redis = '../../dist/redis.png';
+	const typescript = '../../dist/typescript-logo.png';
+
 	// project descriptions
 	const exifdesc = 'Exif God is a simple utility for viewing and removing image metadata.';
 	const organondesc = 'Organon is a logic analyzer that determines whether arguments in propositional logic are valid.';
@@ -35,12 +39,14 @@ const Table = ({donations, updateDonations}) => {
 	const conjuredesc = 'Conjure-React is a shell script used for setting up React projects with either Python or Node as a backend.';
 	const repeatdesc = 'This is a utility to recover the symmetric key and plaintext of a message encrypted with a two-time pad.';
 	const bipdesc = 'Bip Suite is an implementation of the BIP32/BIP39 protocol for generating and managing Bitcoin HD wallets. Currently, the program can generate cryptographically secure BIP32 mnemonic seeds and derive the associated BIP39 extended key pair associated with that seed.';
-	const phildesc = 'PhiloSource is a web archive for philosophical texts that supports document searching and community interaction.'
+	const phildesc = 'PhiloSource is a web archive for philosophical texts that supports document searching and community interaction.';
+	const cconsole = 'Crypto Console is a market data dashboard for the hottest crypto-securities. Users can see current prices, price changes, market caps, mined supply percentage, and daily highs and lows for Bitcoin, Ethereum, and other securities.';
 
 	return (<div id='portblock'>
 	<div className='tabheader'>{'Projects'}</div>
 	<div id='table'>
 	<ProjectCard project={'PhiloSource'} image={philsource} desc={phildesc} applink={'https://github.com/gavinbarrett/PhilSource'} githublink={'https://github.com/gavinbarrett/PhilSource'} lang={node} langdesc={'Node.js'} fe={react} styles={sass} db={psql}/>
+	<ProjectCard project={'Crypto Console'} image={cryptoconsole} desc={cconsole} applink={'https://github.com/gavinbarrett/CryptoConsole'} githublink={'https://github.com/gavinbarrett/CryptoCourse'} lang={node} fe={typescript} styles={sass} db={redis}/>
 	<ProjectCard project={'CA Covid Dash'} image={covdash} desc={covidashdesc} applink={'https://coviddash.site'} githublink={'https://github.com/gavinbarrett/CACovidDash'} lang={python} langdesc={'Python3'} fe={react} styles={sass} db={redis}/>
 	<ProjectCard project={'Organon'} image={organon} desc={organondesc} applink={'http://organon-engine.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/SL_Engine'} lang={python} langdesc={'Python3'} fe={react} styles={css}/>
 	<ProjectCard project={'D&Dice'} image={dndice} desc={dndicedesc} applink={'https://dndice.site/'} githublink={'https://github.com/gavinbarrett/DnDice'} lang={node} langdesc={'Node.js'} fe={react} styles={css}/>
