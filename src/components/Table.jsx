@@ -33,20 +33,20 @@ const Table = ({donations, updateDonations}) => {
 	const organondesc = 'Organon is a logic analyzer that determines whether arguments in propositional logic are valid.';
 	const secretdesc = 'Secret Fracture is a tool that implements a thresholded secret sharing scheme, encrypting messages into shares.';
 	const dndicedesc = 'D&Dice is a tabletop dice rolling application aimed at Dungeons and Dragons campaigns. It is written with Three.js, Cannon.js, and the WebGL API.';
-	const covidashdesc = 'This is a Covid-19 data dashboard for all counties in California. It pulls new Covid data from California\'s Open Data Portal every day and processes it with Pandas.';
+	const covidashdesc = 'This is a Covid-19 data dashboard for all counties in California. It pulls Covid data daily from California\'s Open Data Portal and processes it with Pandas.';
 	const protophiledesc = 'Protophile is a simple CLI based network analyzer written in Python.';
 	const makepydesc = 'MakePy is a CLI tool for building Makefiles for C/C++ programs.';
 	const conjuredesc = 'Conjure-React is a shell script used for setting up React projects with either Python or Node as a backend.';
 	const repeatdesc = 'This is a utility to recover the symmetric key and plaintext of a message encrypted with a two-time pad.';
 	const bipdesc = 'Bip Suite is an implementation of the BIP32/BIP39 protocol for generating and managing Bitcoin HD wallets. Currently, the program can generate cryptographically secure BIP32 mnemonic seeds and derive the associated BIP39 extended key pair associated with that seed.';
 	const phildesc = 'PhiloSource is a web archive for philosophical texts that supports document searching and community interaction.';
-	const cconsole = 'Crypto Console is a market data dashboard for the hottest crypto-securities. Users can see current prices, price changes, market caps, mined supply percentage, and daily highs and lows for Bitcoin, Ethereum, and other securities.';
+	const cconsole = 'Crypto Console is a market data dashboard for the hottest crypto-securities. Users can see current prices, price changes, market caps, mined supply percentage, and daily highs and lows for Bitcoin, Ethereum, and other securities. Data is sourced from the CoinGecko API.';
 
 	return (<div id='portblock'>
 	<div className='tabheader'>{'Projects'}</div>
 	<div id='table'>
 	<ProjectCard project={'PhiloSource'} image={philsource} desc={phildesc} applink={'https://github.com/gavinbarrett/PhilSource'} githublink={'https://github.com/gavinbarrett/PhilSource'} lang={node} langdesc={'Node.js'} fe={react} styles={sass} db={psql}/>
-	<ProjectCard project={'Crypto Console'} image={cryptoconsole} desc={cconsole} applink={'https://github.com/gavinbarrett/CryptoConsole'} githublink={'https://github.com/gavinbarrett/CryptoCourse'} lang={node} fe={typescript} styles={sass} db={redis}/>
+	<ProjectCard project={'Crypto Console'} image={cryptoconsole} desc={cconsole} applink={'https://cryptoconsole.site'} githublink={'https://github.com/gavinbarrett/CryptoCourse'} lang={node} fe={typescript} styles={sass} db={redis}/>
 	<ProjectCard project={'CA Covid Dash'} image={covdash} desc={covidashdesc} applink={'https://coviddash.site'} githublink={'https://github.com/gavinbarrett/CACovidDash'} lang={python} langdesc={'Python3'} fe={react} styles={sass} db={redis}/>
 	<ProjectCard project={'Organon'} image={organon} desc={organondesc} applink={'http://organon-engine.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/SL_Engine'} lang={python} langdesc={'Python3'} fe={react} styles={css}/>
 	<ProjectCard project={'D&Dice'} image={dndice} desc={dndicedesc} applink={'https://dndice.site/'} githublink={'https://github.com/gavinbarrett/DnDice'} lang={node} langdesc={'Node.js'} fe={react} styles={css}/>
