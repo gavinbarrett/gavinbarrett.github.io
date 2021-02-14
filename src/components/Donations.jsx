@@ -6,8 +6,8 @@ const Donations = ({updateDonations}) => {
 
 	const venmo = '@Gavin-Barrett-4';
 	const cashapp = '$GavinABarrett';
-	const bitcoin = '13Px14GYWXpPbkR547GtLZdzFcXGpdgHq2';
-
+	const bitcoin = 'bc1q675dfq5j3vyagn9ue3aenluy2u6xtsrvekwtla';
+	
 	useEffect(() => {
 		// add event listener for mouseleave
 		const dc = document.getElementById('dc');

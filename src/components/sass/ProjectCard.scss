@@ -96,8 +96,10 @@ $phone_w: 375px;
 	height: 20vh;
 	border-radius: 7px;
 	@media only screen and (min-width: $tablet_w) {
-		width: 40vw;
-		height: 37vh;
+		width: 500px;
+		height: 280px;
+		//width: 40vw;
+		//height: 37vh;
 	}
 	@media only screen and (min-width: $laptop_w) {
 		width: 32vw;
