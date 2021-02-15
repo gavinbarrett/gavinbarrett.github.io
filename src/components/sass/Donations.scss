@@ -4,7 +4,7 @@ a.gpglink, a.gpglink:hover {
 }
 
 .donations {
-	display: hidden;
+	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	width: 100vw;
@@ -23,7 +23,7 @@ a.gpglink, a.gpglink:hover {
 }
 
 .donationlinks {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: flex-start;
@@ -39,6 +39,7 @@ a.gpglink, a.gpglink:hover {
 	margin: 2%;
 	margin-bottom: 65vh;
 	margin-right: 40vw;
+	transition: all 0.5s ease-in-out;
 }
 
 .donatelogo {
@@ -46,7 +47,6 @@ a.gpglink, a.gpglink:hover {
 	height: 45px;
 	margin-right: 1vw;
 }
-
 
 .gpgkey {
 	width: 20px;
@@ -71,6 +71,6 @@ a.gpglink, a.gpglink:hover {
 	width: 45vw;
 }
 
-.show-donations {
+.displayed {
 	display: flex;
 }

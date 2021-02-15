@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Donations } from './Donations';
 import './sass/Footer.scss';
 
@@ -27,10 +27,21 @@ const LinkedInLink = ({link}) => {
 	</a></div>);
 }
 
-const DonateLink = ({updateDonations}) => {
-	const hideDonations = () => updateDonations(false);
-	const displayDonations = () => updateDonations(true);
-	return (<div id='dl' className='footerdl'>
+const DonateLink = () => {
+	const [displayed, updateDisplayed] = useState('');
+
+	const toggleOn = () => {
+		if (displayed === "")
+			updateDisplayed("displayed")
+	}
+	
+	const toggleOff = () => {
+		if (displayed === "displayed")
+			updateDisplayed("")
+	}
+
+	return (<div id='dl' className='footerdl' onMouseEnter={toggleOn} onMouseLeave={toggleOff}>
+		<Donations displayed={displayed}/>
 		Donate
 		<img className='footerdonate' src='../dist/money.png'/>
 	</div>);
@@ -53,7 +64,7 @@ const Footer = ({updateDonations}) => {
 		<HomeLink/>
 		<GithubLink link={'https://github.com/gavinbarrett'}/>
 		<LinkedInLink link={'https://www.linkedin.com/in/gavin-barrett-3802a9121/'}/>
-		<DonateLink updateDonations={updateDonations}/>
+		<DonateLink/>
 	</div>
 	</footer>);
 }
