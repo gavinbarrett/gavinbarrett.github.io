@@ -1,6 +1,5 @@
 import React from 'react';
 import { ProjectCard } from './ProjectCard'
-import { Donations } from './Donations';
 import { Emailer } from './Emailer';
 import './sass/Table.scss';
 
@@ -55,7 +54,6 @@ const Table = ({donations, updateDonations}) => {
 	<ProjectCard project={'Bip Suite'} image={null} desc={bipdesc} applink={'https://github.com/gavinbarrett/BIP39_Suite/'} githublink={'https://github.com/gavinbarrett/BIP39_Suite/'} image={bipsuite} lang={python} langdesc={'Python3'} fe={null} styles={null}/>
 	</div>
 	<div className='tabheader'>Contact Me</div>
-	{donations ? <Donations updateDonations={updateDonations}/> : ''}
 	<Emailer/>
 	</div>);
 }

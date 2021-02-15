@@ -4,7 +4,7 @@ a.gpglink, a.gpglink:hover {
 }
 
 .donations {
-	display: flex;
+	display: hidden;
 	justify-content: flex-end;
 	align-items: center;
 	width: 100vw;
@@ -30,13 +30,15 @@ a.gpglink, a.gpglink:hover {
 	width: 50vw;
 	height: 50vh;
 	background: #364156;
-	position: relative;
+	position: absolute;
 	color: #EAAC8B;
 	font-family: 'Baloo Bhai 2';
 	font-size: 1.5vw;
 	border-radius: 7px;
 	padding: 2%;
 	margin: 2%;
+	margin-bottom: 65vh;
+	margin-right: 40vw;
 }
 
 .donatelogo {
@@ -67,4 +69,8 @@ a.gpglink, a.gpglink:hover {
 
 .payment {
 	width: 45vw;
+}
+
+.show-donations {
+	display: flex;
 }

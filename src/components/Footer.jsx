@@ -28,26 +28,11 @@ const LinkedInLink = ({link}) => {
 }
 
 const DonateLink = ({updateDonations}) => {
-
-	useEffect(() => {
-		const dl = document.getElementById('dl');
-		dl.addEventListener('mouseenter', displayDonations);
-		//const dc = document.getElementById('dc');
-		dl.addEventListener('mouseleave', hideDonations);
-	}, []);
-
-	const hideDonations = () => { updateDonations(false); }
-
-	const displayDonations = () => { updateDonations(true); }
-
-	//const dl = document.getElementById('dl');
-	//dl.removeEventListener('mouseenter', displayDonations);
-	//const dc = document.getElementById('dc');
-	//dc.addEventListener('mouseleave', hideDonations);
-
+	const hideDonations = () => updateDonations(false);
+	const displayDonations = () => updateDonations(true);
 	return (<div id='dl' className='footerdl'>
 		Donate
-		<img className='footerdonate' loading='lazy' src='../dist/money.png'/>
+		<img className='footerdonate' src='../dist/money.png'/>
 	</div>);
 }
 
