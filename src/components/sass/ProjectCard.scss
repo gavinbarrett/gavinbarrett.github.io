@@ -171,7 +171,17 @@ $phone_w: 375px;
 	text-decoration: none;
 }
 
+.lang-container {
+	width: 45px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .lang {
+	width: 100%;
+	height: auto;
 	transition: all 0.25s ease-in-out;
 }
 

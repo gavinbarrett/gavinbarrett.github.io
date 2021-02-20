@@ -68,9 +68,28 @@ a.gpglink, a.gpglink:hover {
 }
 
 .payment {
-	width: 45vw;
+	width: 50vw;
+	display: flex;
 }
 
 .displayed {
 	display: flex;
+}
+
+.copy-address {
+	color: #E56B6F;
+	padding-right: 1%;
+}
+
+.clipboard-box {
+	width: 8vw;
+	height: 3vh;
+	display: flex;
+	padding-left: 3%;
+}
+
+.clipboard {
+	width: 5vw;
+	height: 4vh;
+	padding-left: 1%;
 }

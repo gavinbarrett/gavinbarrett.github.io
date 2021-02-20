@@ -6,7 +6,7 @@ const HomeLink = () => {
 	// scroll to the top smoothly
 	return (<div className="home" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>
 		Home
-		<img className='homeicon' loading='lazy' src='../dist/home.png'/>
+		<img className='homeicon' src='../dist/home.png'/>
 	</div>);
 }
 
@@ -23,12 +23,12 @@ const GithubLink = ({link}) => {
 const LinkedInLink = ({link}) => {
 	return (<div className='footerlil'><a className='footerlink' href={link}>
 	Linked
-	<img className='footerlinkedicon' loading='lazy' src='../dist/linkedcolor.png'/>
+	<img className='footerlinkedicon' src='../dist/linkedcolor.png'/>
 	</a></div>);
 }
 
 const DonateLink = () => {
-	const [displayed, updateDisplayed] = useState('');
+	const [displayed, updateDisplayed] = useState("");
 
 	const toggleOn = () => {
 		if (displayed === "")
