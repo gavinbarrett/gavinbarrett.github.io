@@ -145,12 +145,23 @@ $phone_w: 375px;
 	background: #212D40;
 	border-radius: 5px;
 	color: #EAAC8B;
+	transition: all 0.2s ease-in-out;
 }
 
-.githublink:hover {
+.githublink:visited {
+	outline: none;
+	color: #EAAC8B;
+	text-decoration: none;
+	cursor: default;
+	background: #212D40;
+}
+
+.githublink:hover, .githublink:active, .githublink:focus {
 	background: #151e2b;
 	color: #EAAC8B;
 	text-decoration: none;
+	outline: none;
+	cursor: default;
 }
 
 .applink {
@@ -163,12 +174,23 @@ $phone_w: 375px;
 	background: #212D40;
 	border-radius: 5px;
 	color: #EAAC8B;
+	transition: all 0.2s ease-in-out;
 }
 
-.applink:hover {
+.applink:visited {
+	outline: none;
+	color: #EAAC8B;
+	text-decoration: none;
+	cursor: default;
+	background: #212D40;
+}
+
+.applink:hover, .applink:active, .applink:focus {
 	background: #151e2b;
 	color: #EAAC8B;
 	text-decoration: none;
+	outline: none;
+	cursor: default;
 }
 
 .lang-container {

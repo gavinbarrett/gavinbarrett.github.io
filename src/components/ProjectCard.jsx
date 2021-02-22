@@ -15,7 +15,7 @@ const ProjectCard = ({applink, githublink, project, image, desc, lang, langdesc,
 const ProjectDescription = ({desc, applink, githublink, project}) => {
 	{/* describe the project's purpose and any novel qualities; link to the application and its source code */}
 	return (<div className='desc'>
-		<div className="descbox">{desc}</div>
+		<p className="descbox">{desc}</p>
 		<div className='links'>
 			{applink ? <AppLink applink={applink} project={project}/> : ''}
 			{githublink ? <GithubLink githublink={githublink}/> : ''}

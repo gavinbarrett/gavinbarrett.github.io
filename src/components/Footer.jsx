@@ -4,10 +4,10 @@ import './sass/Footer.scss';
 
 const HomeLink = () => {
 	// scroll to the top smoothly
-	return (<div className="home" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>
+	return (<p className="home" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>
 		Home
 		<img className='homeicon' src='../dist/home.png'/>
-	</div>);
+	</p>);
 }
 
 const GithubLink = ({link}) => {
@@ -29,22 +29,19 @@ const LinkedInLink = ({link}) => {
 
 const DonateLink = () => {
 	const [displayed, updateDisplayed] = useState("");
-
 	const toggleOn = () => {
 		if (displayed === "")
 			updateDisplayed("displayed")
 	}
-	
 	const toggleOff = () => {
 		if (displayed === "displayed")
 			updateDisplayed("")
 	}
-
-	return (<div id='dl' className='footerdl' onMouseEnter={toggleOn} onMouseLeave={toggleOff}>
+	return (<p id='dl' className='footerdl' onMouseEnter={toggleOn} onMouseLeave={toggleOff}>
 		<Donations displayed={displayed}/>
 		Donate
 		<img className='footerdonate' src='../dist/money.png'/>
-	</div>);
+	</p>);
 }
 
 const EmailLink = ({address, history}) => {
