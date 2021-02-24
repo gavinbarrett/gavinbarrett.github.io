@@ -41,7 +41,7 @@ const Table = ({donations, updateDonations}) => {
 
 	<ProjectCard project={'CA Covid Dash'} image={covdash} desc={covidashdesc} applink={'https://coviddash.site'} githublink={'https://github.com/gavinbarrett/CACovidDash'} lang={python} langdesc={'Python3'} types={null} fe={react} styles={sass} db={redis}/>
 
-	<ProjectCard project={'Exif God'} image={exif_god} desc={exifdesc} applink={'http://exif-god.herokuapp.com/'} githublink={'https://github.com/gavinbarrett/exif_god'} lang={python} langdesc={'Python3'} types={null} fe={react} styles={css}/>
+	<ProjectCard project={'Exif God'} image={exif_god} desc={exifdesc} applink={'https://exifgod.site/'} githublink={'https://github.com/gavinbarrett/exif_god'} lang={python} langdesc={'Python3'} types={null} fe={react} styles={css}/>
 	
 	<ProjectCard project={'Crypto Console'} image={cryptoconsole} desc={cconsole} applink={'https://cryptoconsole.site'} githublink={'https://github.com/gavinbarrett/CryptoCourse'} lang={node} types={typescript} fe={react} styles={sass} db={redis}/>
 
