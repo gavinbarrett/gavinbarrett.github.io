@@ -36,11 +36,13 @@ $phone_w: 376px;
 
 .skillcategory {
 	color: #D66853;
-	font-size: 3vw;
+	font-size: 3.5rem;
 	width: 30vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	word-break: break-word;
+	text-align: center;
 }
 
 .skilllist {

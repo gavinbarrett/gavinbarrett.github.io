@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Header } from './Header';
 import { Summary } from './Summary';
 import { Skills } from './Skills';
+import { Education } from './Education';
 import { Table } from './Table';
 import { Stack } from './Stack';
 import { Footer } from './Footer';
@@ -22,6 +23,7 @@ const Portfolio = (props) => {
 	<div id='page'>
 		<Summary/>
 		<Skills/>
+		<Education/>
 		<Table donations={donations} updateDonations={updateDonations}/>
 		<Footer updateDonations={updateDonations}/>
 	</div>
