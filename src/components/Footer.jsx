@@ -55,17 +55,13 @@ const EmailLink = ({address, history}) => {
 	</div>);
 }
 
-const Footer = ({updateDonations}) => {
+export const Footer = ({updateDonations}) => {
 	return (<footer>
-	<div className='footer'>
-		<HomeLink/>
-		<GithubLink link={'https://github.com/gavinbarrett'}/>
-		<LinkedInLink link={'https://www.linkedin.com/in/gavin-barrett-3802a9121/'}/>
-		<DonateLink/>
-	</div>
+		<div className='footer'>
+			<HomeLink/>
+			<GithubLink link={'https://github.com/gavinbarrett'}/>
+			<LinkedInLink link={'https://www.linkedin.com/in/gavin-barrett-3802a9121/'}/>
+			<DonateLink/>
+		</div>
 	</footer>);
-}
-
-export {
-	Footer
 }

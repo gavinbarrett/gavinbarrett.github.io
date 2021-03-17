@@ -31,17 +31,13 @@ const Submit = () => {
       </div>);
 }
 
-const Emailer = () => {
+export const Emailer = () => {
 	return (<div id='emailer'>
-    <form action="https://formspree.io/xknqyrkd" className='form' method="POST">
-    <Subject/>
-	<ReplyEmail/>
-	<Message/>
-	<Submit/>
-	</form>
+		<form action="https://formspree.io/xknqyrkd" className='form' method="POST">
+			<Subject/>
+			<ReplyEmail/>
+			<Message/>
+			<Submit/>
+		</form>
 	</div>);
-}
-
-export {
-	Emailer
 }

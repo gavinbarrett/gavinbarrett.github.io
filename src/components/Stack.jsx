@@ -4,7 +4,7 @@ import ReactLogo from './sass/assets/react.svg';
 import PostLogo from './sass/assets/post.svg';
 import './sass/Stack.scss';
 
-const Stack = () => {
+export const Stack = () => {
 	return (<div className="stack">
 		<div>
 			<img className="stackitem" src={ReactLogo}/>
@@ -16,8 +16,4 @@ const Stack = () => {
 			<img className="stackitem" src={PostLogo}/>
 		</div>
 	</div>);
-}
-
-export {
-	Stack
 }

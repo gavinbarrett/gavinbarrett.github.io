@@ -8,15 +8,11 @@ const Intro = ({greeting}) => {
 	</div>);
 }
 
-const Header = ({greeting}) => {
+export const Header = ({greeting}) => {
 	return (<header>
 		<Intro greeting={greeting}/>
 		<div className='arrowcontainer'>
 			<i class="fas fa-chevron-down arrow"/>
 		</div>
 	</header>);
-}
-
-export {
-	Header
 }

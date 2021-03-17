@@ -8,8 +8,7 @@ import { Stack } from './Stack';
 import { Footer } from './Footer';
 import './sass/Portfolio.scss';
 
-const Portfolio = (props) => {
-	
+export const Portfolio = (props) => {
 	const [emailer, updateEmailer] = useState(null);
 	const [donations, updateDonations] = useState(null);
 
@@ -28,8 +27,4 @@ const Portfolio = (props) => {
 		<Footer updateDonations={updateDonations}/>
 	</div>
 	</div>);
-}
-
-export {
-	Portfolio
 }

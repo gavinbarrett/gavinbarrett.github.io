@@ -1,7 +1,7 @@
 import React from 'react'
 import './sass/ProjectCard.scss';
 
-const ProjectCard = ({applink, githublink, project, image, desc, lang, langdesc, types, fe, styles, db}) => {
+export const ProjectCard = ({applink, githublink, project, image, desc, lang, langdesc, types, fe, styles, db}) => {
 	{/* compose a concise description of a project */}
 	return (<div className="projectcard">
 		<div className='projecttitle'>{project}</div>
@@ -63,8 +63,4 @@ const AppLink = ({applink, project}) => {
 const GithubLink = ({githublink}) => {
 	{/* link to each projects' source code */}
 	return (<a className='githublink' href={githublink}><img className='giticon' src='../dist/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus0xEAAC8B.png'/>Code</a>);
-}
-
-export {
-	ProjectCard
 }

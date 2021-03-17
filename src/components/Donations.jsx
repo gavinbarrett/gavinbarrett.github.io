@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './sass/Donations.scss'
 
-const Donations = ({displayed}) => {
+export const Donations = ({displayed}) => {
 	const venmo = '@Gavin-Barrett-4';
 	const cashapp = '$GavinABarrett';
 	const bitcoin = 'bc1q675dfq5j3vyagn9ue3aenluy2u6xtsrvekwtla';
@@ -27,8 +27,4 @@ const Donations = ({displayed}) => {
 			</div>
 		</div>
 	</div>);
-}
-
-export {
-	Donations
 }
