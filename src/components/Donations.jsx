@@ -4,7 +4,7 @@ import './sass/Donations.scss'
 export const Donations = ({displayed}) => {
 	const venmo = '@Gavin-Barrett-4';
 	const cashapp = '$GavinABarrett';
-	const bitcoin = 'bc1q675dfq5j3vyagn9ue3aenluy2u6xtsrvekwtla';
+	const bitcoin = '3J9nH7hYiodP6xX1eTkYwd3KJuM3hfvRph';
 	const [copyState, updateCopyState] = useState("Copy");
 	const revertClipboard = async () => {
 		await updateCopyState("Copy");
