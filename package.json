@@ -2,7 +2,7 @@
   "name": "gavinbarrett.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "gimg.js",
+  "main": "server.js",
   "scripts": {
     "server": "node server.js",
     "start": "nodemon server.js"

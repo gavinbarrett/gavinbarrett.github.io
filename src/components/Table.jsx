@@ -10,6 +10,7 @@ export const Table = ({donations, updateDonations}) => {
 	const philsource = <img className='image' src='../../dist/philosource-screen.png'/>
 	const cryptoconsole = <img className='image' src='../../dist/cryptoconsole-screen.png'/>
 	const protoimg = <img className='image' src='../../dist/protophile.png'/>;
+	const urandomimg = <img className='image' src='../../dist/urandom.blog.png'/>
 
 	// stack logo paths
 	const shell = '../../dist/shelllogo.png';
@@ -29,6 +30,7 @@ export const Table = ({donations, updateDonations}) => {
 	const phildesc = 'PhiloSource is a web archive for philosophical texts that supports document searching and community interaction.';
 	const cconsole = 'Crypto Console is a market data dashboard for the hottest crypto-securities. Users can see current prices, price changes, market caps, mined supply percentage, and daily highs and lows for Bitcoin, Ethereum, and other securities. Data is sourced from the CoinGecko API.';
 	const protodesc = 'ProtoPhile is a host-based protocol analyzer written in Python. With this tool you can monitor all traffic passing through your host system.';
+	const urandomdesc = "This is a personal blog I use to document my growth as a developer and share knowledge and skills I've acquired over the course of my academic and professional career.";
 
 	return (<div id='portblock'>
 	<div className='tabheader'>{'Projects'}</div>
@@ -36,6 +38,8 @@ export const Table = ({donations, updateDonations}) => {
 	<ProjectCard project={'PhiloSource'} image={philsource} desc={phildesc} applink={'https://philosource.site/'} githublink={'https://github.com/gavinbarrett/PhilSource'} lang={node} langdesc={'Node.js'} types={null} fe={react} styles={sass} db={psql}/>
 
 	<ProjectCard project={'Bip Suite'} desc={bipdesc} applink={'https://biptools.site/'} githublink={'https://github.com/gavinbarrett/BIP39_Suite/'} image={bipsuite} lang={python} langdesc={'Python3'} types={typescript} fe={react} styles={sass}/>
+
+	<ProjectCard project={'urandom.blog'} desc={urandomdesc} applink={'https://urandom.blog/'} githublink={'https://github.com/gavinbarrett/urandom.blog'} image={urandomimg} lang={node} langdesc={null} types={typescript} fe={react} styles={sass} db={psql}/>
 
 	<ProjectCard project={'CA Covid Dash'} image={covdash} desc={covidashdesc} applink={'https://coviddash.site'} githublink={'https://github.com/gavinbarrett/CACovidDash'} lang={python} langdesc={'Python3'} types={null} fe={react} styles={sass} db={redis}/>
 	
