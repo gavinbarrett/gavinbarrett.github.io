@@ -5,7 +5,6 @@ import './sass/Table.scss';
 
 export const Table = ({donations, updateDonations}) => {
 	// project image/gif paths
-	const covdash = <img className='image' src='../../dist/coviddash-screen.png'/>;
 	const bipsuite = <img className='image' src='../../dist/bipsuite-screen.png'/>
 	const philsource = <img className='image' src='../../dist/philosource-screen.png'/>
 	const cryptoconsole = <img className='image' src='../../dist/cryptoconsole-screen.png'/>
@@ -25,7 +24,6 @@ export const Table = ({donations, updateDonations}) => {
 	const typescript = '../../dist/typescript-logo.png';
 
 	// project descriptions
-	const covidashdesc = 'This is a Covid-19 data dashboard for all counties in California. It pulls Covid data daily from California\'s Open Data Portal and processes it with Pandas.';
 	const bipdesc = 'Bip Suite is an implementation of the BIP32/BIP39 protocol for generating and managing crypto-currency HD wallets.';
 	const phildesc = 'PhiloSource is a web archive for philosophical texts that supports document searching and community interaction.';
 	const cconsole = 'Crypto Console is a market data dashboard for the hottest crypto-securities. Users can see current prices, price changes, market caps, mined supply percentage, and daily highs and lows for Bitcoin, Ethereum, and other securities. Data is sourced from the CoinGecko API.';
@@ -35,14 +33,12 @@ export const Table = ({donations, updateDonations}) => {
 	return (<div id='portblock'>
 	<div className='tabheader'>{'Projects'}</div>
 	<div id='table'>
-	<ProjectCard project={'PhiloSource'} image={philsource} desc={phildesc} applink={'https://philosource.site/'} githublink={'https://github.com/gavinbarrett/PhilSource'} lang={node} langdesc={'Node.js'} types={null} fe={react} styles={sass} db={psql}/>
+	<ProjectCard project={'urandom.blog'} desc={urandomdesc} applink={'https://urandom.blog/'} githublink={'https://github.com/gavinbarrett/urandom.blog'} image={urandomimg} lang={node} langdesc={null} types={typescript} fe={react} styles={sass} db={psql}/>
 
 	<ProjectCard project={'Bip Suite'} desc={bipdesc} applink={'https://biptools.site/'} githublink={'https://github.com/gavinbarrett/BIP39_Suite/'} image={bipsuite} lang={python} langdesc={'Python3'} types={typescript} fe={react} styles={sass}/>
 
-	<ProjectCard project={'urandom.blog'} desc={urandomdesc} applink={'https://urandom.blog/'} githublink={'https://github.com/gavinbarrett/urandom.blog'} image={urandomimg} lang={node} langdesc={null} types={typescript} fe={react} styles={sass} db={psql}/>
+	<ProjectCard project={'PhiloSource'} image={philsource} desc={phildesc} applink={'https://philosource.site/'} githublink={'https://github.com/gavinbarrett/PhilSource'} lang={node} langdesc={'Node.js'} types={null} fe={react} styles={sass} db={psql}/>
 
-	<ProjectCard project={'CA Covid Dash'} image={covdash} desc={covidashdesc} applink={'https://coviddash.site'} githublink={'https://github.com/gavinbarrett/CACovidDash'} lang={python} langdesc={'Python3'} types={null} fe={react} styles={sass} db={redis}/>
-	
 	<ProjectCard project={'ProtoPhile'} image={protoimg} desc={protodesc} applink={'https://github.com/gavinbarrett/ProtoPhile'} githublink={'https://github.com/gavinbarrett/ProtoPhile'} lang={python} langdesc={'Python3'} types={null} fe={null} styles={null}/>
 	
 	<ProjectCard project={'Crypto Console'} image={cryptoconsole} desc={cconsole} applink={'https://cryptoconsole.site'} githublink={'https://github.com/gavinbarrett/CryptoCourse'} lang={node} types={typescript} fe={react} styles={sass} db={redis}/>
