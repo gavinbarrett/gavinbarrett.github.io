@@ -69,6 +69,7 @@ a.gpglink, a.gpglink:hover {
 
 .payment {
 	width: 50vw;
+	height: 12vh;
 	display: flex;
 	align-items: center;
 }
@@ -77,15 +78,21 @@ a.gpglink, a.gpglink:hover {
 	display: flex;
 }
 
-.copy-address {
+p.copy-address {
 	color: #E56B6F;
+	height: 12vh;
+	display: flex;
+	align-items: center;
 	padding-right: 1%;
+	margin: 0;
 }
 
 .clipboard-box {
 	width: 8vw;
-	height: 3vh;
+	height: 12vh;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding-left: 3%;
 }
 

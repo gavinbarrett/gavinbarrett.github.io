@@ -5,11 +5,12 @@ import './sass/Table.scss';
 
 export const Table = ({donations, updateDonations}) => {
 	// project image/gif paths
+	const urandomimg = <img className='image' src='../../dist/urandom.blog.png'/>
 	const bipsuite = <img className='image' src='../../dist/bipsuite-screen.png'/>
+	const organonimg = <img className='image' src='../../dist/organon.png'/>
 	const philsource = <img className='image' src='../../dist/philosource-screen.png'/>
 	const cryptoconsole = <img className='image' src='../../dist/cryptoconsole-screen.png'/>
 	const protoimg = <img className='image' src='../../dist/protophile.png'/>;
-	const urandomimg = <img className='image' src='../../dist/urandom.blog.png'/>
 
 	// stack logo paths
 	const shell = '../../dist/shelllogo.png';
@@ -24,6 +25,7 @@ export const Table = ({donations, updateDonations}) => {
 	const typescript = '../../dist/typescript-logo.png';
 
 	// project descriptions
+	const organondesc = 'Organon is a system for assessing the validity of a set of statements in propositional logic.'
 	const bipdesc = 'Bip Suite is an implementation of the BIP32/BIP39 protocol for generating and managing crypto-currency HD wallets.';
 	const phildesc = 'PhiloSource is a web archive for philosophical texts that supports document searching and community interaction.';
 	const cconsole = 'Crypto Console is a market data dashboard for the hottest crypto-securities. Users can see current prices, price changes, market caps, mined supply percentage, and daily highs and lows for Bitcoin, Ethereum, and other securities. Data is sourced from the CoinGecko API.';
@@ -37,10 +39,12 @@ export const Table = ({donations, updateDonations}) => {
 
 	<ProjectCard project={'Bip Suite'} desc={bipdesc} applink={'https://biptools.site/'} githublink={'https://github.com/gavinbarrett/BIP39_Suite/'} image={bipsuite} lang={python} langdesc={'Python3'} types={typescript} fe={react} styles={sass}/>
 
+	<ProjectCard project={'Organon'} desc={organondesc} applink={'https://organon-engine.site'} githublink={'https://github.com/gavinbarrett/SL_Engine'} image={organonimg} lang={python} fe={react} styles={css}/>
+	
+	<ProjectCard project={'ProtoPhile'} image={protoimg} desc={protodesc} applink={'https://github.com/gavinbarrett/ProtoPhile'} githublink={'https://github.com/gavinbarrett/ProtoPhile'} lang={python} langdesc={'Python3'} types={null} fe={null} styles={null}/>
+
 	<ProjectCard project={'PhiloSource'} image={philsource} desc={phildesc} applink={'https://philosource.site/'} githublink={'https://github.com/gavinbarrett/PhilSource'} lang={node} langdesc={'Node.js'} types={null} fe={react} styles={sass} db={psql}/>
 
-	<ProjectCard project={'ProtoPhile'} image={protoimg} desc={protodesc} applink={'https://github.com/gavinbarrett/ProtoPhile'} githublink={'https://github.com/gavinbarrett/ProtoPhile'} lang={python} langdesc={'Python3'} types={null} fe={null} styles={null}/>
-	
 	<ProjectCard project={'Crypto Console'} image={cryptoconsole} desc={cconsole} applink={'https://cryptoconsole.site'} githublink={'https://github.com/gavinbarrett/CryptoCourse'} lang={node} types={typescript} fe={react} styles={sass} db={redis}/>
 	</div>
 	<div className='tabheader'>Contact Me</div>
