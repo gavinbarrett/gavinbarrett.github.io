@@ -5,7 +5,7 @@ import './sass/Table.scss';
 
 export const Table = ({donations, updateDonations}) => {
 	// project image/gif paths
-	const urandomimg = <img className='image' src='../../dist/urandom.blog.png'/>
+	const urandomimg = <img className='image' src='../../dist/urandomblog.png'/>
 	const bipsuite = <img className='image' src='../../dist/bipsuite-screen.png'/>
 	const organonimg = <img className='image' src='../../dist/organon.png'/>
 	const philsource = <img className='image' src='../../dist/philosource-screen.png'/>
