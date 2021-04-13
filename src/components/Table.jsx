@@ -26,7 +26,7 @@ export const Table = ({donations, updateDonations}) => {
 
 	// project descriptions
 	const organondesc = 'Organon is a system for assessing the validity of a set of statements in propositional logic.'
-	const bipdesc = 'Bip Suite is an implementation of the BIP32/BIP39 protocol for generating and managing crypto-currency HD wallets.';
+	const bipdesc = 'Biptools is an implementation of the BIP32/BIP39 protocol for generating and managing crypto-currency HD wallets.';
 	const phildesc = 'PhiloSource is a web archive for philosophical texts that supports document searching and community interaction.';
 	const cconsole = 'Crypto Console is a market data dashboard for the hottest crypto-securities. Users can see current prices, price changes, market caps, mined supply percentage, and daily highs and lows for Bitcoin, Ethereum, and other securities. Data is sourced from the CoinGecko API.';
 	const protodesc = 'ProtoPhile is a host-based protocol analyzer written in Python. With this tool you can monitor all traffic passing through your host system.';
@@ -37,7 +37,7 @@ export const Table = ({donations, updateDonations}) => {
 	<div id='table'>
 	<ProjectCard project={'urandom.blog'} desc={urandomdesc} applink={'https://urandom.blog/'} githublink={'https://github.com/gavinbarrett/urandom.blog'} image={urandomimg} lang={node} langdesc={null} types={typescript} fe={react} styles={sass} db={psql}/>
 
-	<ProjectCard project={'Bip Suite'} desc={bipdesc} applink={'https://biptools.site/'} githublink={'https://github.com/gavinbarrett/BIP39_Suite/'} image={bipsuite} lang={python} langdesc={'Python3'} types={typescript} fe={react} styles={sass}/>
+	<ProjectCard project={'Biptools'} desc={bipdesc} applink={'https://biptools.site/'} githublink={'https://github.com/gavinbarrett/BIP39_Suite/'} image={bipsuite} lang={python} langdesc={'Python3'} types={typescript} fe={react} styles={sass}/>
 
 	<ProjectCard project={'Organon'} desc={organondesc} applink={'https://organon-engine.site'} githublink={'https://github.com/gavinbarrett/SL_Engine'} image={organonimg} lang={python} fe={react} styles={css}/>
 	

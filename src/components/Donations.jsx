@@ -18,9 +18,9 @@ export const Donations = ({displayed}) => {
 		setTimeout(revertClipboard, 2000);
 	}
 	return (<div className={`donationlinks ${displayed}`}>
-		<div className="payment"><img className='donatelogo' loading='lazy' src='../../dist/cashapplogot.png'/>{cashapp}</div>
-		<div className="payment"><img className='donatelogo' loading='lazy' src='../../dist/venmologo.png'/>{venmo}</div>
-		<div className="payment"><img className='donatelogo' loading='lazy' src='../../dist/bitcoinlogo.png'/>
+		<div className="payment"><img className='donatelogo' src='../../dist/cashapplogot.png'/>{cashapp}</div>
+		<div className="payment"><img className='donatelogo' src='../../dist/venmologo.png'/>{venmo}</div>
+		<div className="payment"><img className='donatelogo' src='../../dist/bitcoinlogo.png'/>
 			{bitcoin}
 			<div className="clipboard-box" onClick={copyToClipboard}>
 				<p className="copy-address">{copyState}</p>
