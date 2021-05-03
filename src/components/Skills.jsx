@@ -25,6 +25,6 @@ export const Skills = () => {
 	<div className='skills'>
 	<SkillCard category={'Languages'} skills={[['• Python','5yrs'], ['• JS/TS/ES6','3yrs'], ['• C/C++','5yrs'], ['• SQL','2yr'], ['• Bash', '5yrs'], ['• HTML5','3yrs'], ['• CSS3/SCSS','3yrs']]}/>
 	<SkillCard category={'Libraries'} skills={[['• React','3yrs'], ['• Express','2yrs'], ['• Flask','2yrs'] , ['• Pandas', '1yr'], ['• Pillow', '3yr'], ['• WebSockets', '1yr']]}/>
-	<SkillCard category={'Build / Development'} skills={[['• Linux','5yrs'], ['• Git','4yrs'], ['• NPM','2yrs'], ['• Nginx','1yr'], ['• Webpack','1yr'], ['• Docker', '1yr'], ['• OWASP ZAP', '1yr']]}/>
+	<SkillCard category={'Development'} skills={[['• Linux','5yrs'], ['• Git','4yrs'], ['• NPM','2yrs'], ['• Nginx','1yr'], ['• Webpack','1yr'], ['• Docker', '1yr'], ['• OWASP ZAP', '1yr']]}/>
 	</div></>);
 }

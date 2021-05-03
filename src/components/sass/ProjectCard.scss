@@ -194,11 +194,15 @@ $phone_w: 375px;
 }
 
 .lang-container {
-	width: 45px;
-	height: 45px;
+	width: 30px;
+	height: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	@media (min-width: 1000px) {
+		width: 45px;
+		height: 45px;
+	}
 }
 
 .lang {
