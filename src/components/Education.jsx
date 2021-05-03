@@ -7,7 +7,7 @@ export const Education = () => {
 		<div className="edu">
 			<p className="edu-header">{"Degrees"}</p>
 			<p className="edu-text">
-				<p>{"BA in Philosophy + Minor in Comp. Sci."}</p>
+				<p className="degree">{"BA in Philosophy + Minor in Comp. Sci."}</p>
 				<p>{"University of CA, Davis"}</p>
 				<p>{"Received June 11th, 2020"}</p>
 			</p>
@@ -15,7 +15,7 @@ export const Education = () => {
 		<div className="edu">
 			<p className="edu-header">{"Certifications"}</p>
 			<div className="cert-container">
-				<p className="edu-cert-text">
+				{/*<p className="edu-cert-text">*/}
 					<p className="cert-logo">
 						{"CompTIA Security+"}
 						<div className="logo-container">
@@ -24,7 +24,7 @@ export const Education = () => {
 					</p>
 					<p>{"CompTIA"}</p>
 					<p>{"Received March 10th, 2021"}</p>
-				</p>
+				{/*</p>*/}
 			</div>
 		</div>
 	</div></>);

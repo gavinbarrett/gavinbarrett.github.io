@@ -28,17 +28,28 @@
 	width: 100%;
 	height: 60%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	color: #EAAC8B;
+	font-size: 1.25rem;
+	@media (min-width: 800px) {
+		font-size: 2rem;
+	}
+}
+
+.degree {
+	height: 20%;
 }
 
 .cert-logo {
 	display: flex;
+	height: 20%;
 	align-items: center;
 }
 
 .edu-text {
-	font-size: 2rem;
+	font-size: 1.25rem;
 	width: 100%;
 	height: 60%;
 	display: flex;
@@ -47,6 +58,9 @@
 	align-items: center;
 	margin: 0;
 	color: #EAAC8B;
+	@media (min-width: 800px) {
+		font-size: 2rem;
+	}
 }
 
 .edu-text > p, .edu-cert-text > p {
@@ -54,6 +68,7 @@
 	text-align: center;
 }
 
+/*
 .edu-cert-text {
 	font-size: 2rem;
 	display: flex;
@@ -62,10 +77,15 @@
 	align-items: center;
 	color: #EAAC8B;
 }
+*/
 
 .logo-container {
-	width: 64px;
-	height: 64px;
+	width: 40px;
+	height: 40px;
+	@media (min-width: 800px) {
+		width: 55px;
+		height: 55px;
+	}
 }
 
 .logo-container > img {
