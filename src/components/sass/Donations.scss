@@ -28,7 +28,7 @@ a.gpglink, a.gpglink:hover {
 	justify-content: space-evenly;
 	align-items: flex-start;
 	width: 50vw;
-	height: 50vh;
+	height: 60vh;
 	background: #364156;
 	position: absolute;
 	color: #EAAC8B;
@@ -37,7 +37,7 @@ a.gpglink, a.gpglink:hover {
 	border-radius: 7px;
 	padding: 2%;
 	margin: 2%;
-	margin-bottom: 65vh;
+	margin-bottom: 70vh;
 	margin-right: 40vw;
 	transition: all 0.5s ease-in-out;
 }
@@ -68,10 +68,11 @@ a.gpglink, a.gpglink:hover {
 }
 
 .payment {
-	width: 50vw;
+	width: 40vw;
 	height: 12vh;
 	display: flex;
 	align-items: center;
+	word-break: break-all;
 }
 
 .displayed {
@@ -100,4 +101,8 @@ p.copy-address {
 	width: 5vw;
 	height: 4vh;
 	padding-left: 1%;
+}
+
+p.crypto-disclaimer {
+	color: #e56b6f;
 }
