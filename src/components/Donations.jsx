@@ -8,15 +8,25 @@ export const Donations = ({displayed}) => {
 	const algo = '2LG3OYODNOER2KB4OQ7DTUEZD3AENEV2BESE3R7J7VEH2CDMANYJRPXR5M';
 	const xlm = 'GDPONGJGI7DMGRNA3EHLL2XB3P4L6BMS5JXGXTZSOKYQQ3NXAI47STRF';
 	const ada = 'addr1q8rd14dety86d0awqj65kcnn2mrgcv8vnhtj1yw3yy3t2fy9vumw70p5csamzacf1w6pddxd91xvmtx6yh3f4mqza2usxdkrmu';
-	const [copyState, updateCopyState] = useState("Copy");
+	const [algoCopyState, updateALGOCopyState] = useState("Copy");
+	const [xlmCopyState, updateXLMCopyState] = useState("Copy");
 	const revertClipboard = async () => {
-		await updateCopyState("Copy");
+		await updateALGOCopyState("Copy");
+		await updateXLMCopyState("Copy");
 	}
-	const copyToClipboard = async () => {
+	const copyALGOToClipboard = async () => {
 		// copy bitcoin address to the user's clipboard
-		await navigator.clipboard.writeText(bitcoin);
+		await navigator.clipboard.writeText(algo);
 		// notify user the address has been copied
-		await updateCopyState("Copied ✓");
+		await updateALGOCopyState("Copied ✓");
+		// revert copy button
+		setTimeout(revertClipboard, 2000);
+	}
+	const copyXLMToClipboard = async () => {
+		// copy bitcoin address to the user's clipboard
+		await navigator.clipboard.writeText(xlm);
+		// notify user the address has been copied
+		await updateXLMCopyState("Copied ✓");
 		// revert copy button
 		setTimeout(revertClipboard, 2000);
 	}
@@ -28,14 +38,14 @@ export const Donations = ({displayed}) => {
 		</p>
 		<div className="payment"><img className="donatelogo" src="../../dist/algologo.png"/>
 			{algo}
-			<div className="clipboard-box" onClick={copyToClipboard}>
-				<p className="copy-address">{copyState}</p>
+			<div className="clipboard-box" onClick={copyALGOToClipboard}>
+				<p className="copy-address">{algoCopyState}</p>
 			</div>
 		</div>
 		<div className="payment"><img className="donatelogo" src="../../dist/xlmlogo.png"/>
 			{xlm}
-			<div className="clipboard-box" onClick={copyToClipboard}>
-				<p className="copy-address">{copyState}</p>
+			<div className="clipboard-box" onClick={copyXLMToClipboard}>
+				<p className="copy-address">{xlmCopyState}</p>
 			</div>
 		</div>
 	</div>);

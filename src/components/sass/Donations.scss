@@ -27,7 +27,7 @@ a.gpglink, a.gpglink:hover {
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: flex-start;
-	width: 50vw;
+	width: 58vw;
 	height: 60vh;
 	background: #364156;
 	position: absolute;
@@ -68,7 +68,7 @@ a.gpglink, a.gpglink:hover {
 }
 
 .payment {
-	width: 40vw;
+	width: 48vw;
 	height: 12vh;
 	display: flex;
 	align-items: center;
@@ -89,7 +89,7 @@ p.copy-address {
 }
 
 .clipboard-box {
-	width: 8vw;
+	width: 10vw;
 	height: 12vh;
 	display: flex;
 	align-items: center;
@@ -104,5 +104,6 @@ p.copy-address {
 }
 
 p.crypto-disclaimer {
+	width: 50vw;
 	color: #e56b6f;
 }
