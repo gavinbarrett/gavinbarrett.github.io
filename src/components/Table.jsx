@@ -6,10 +6,10 @@ import './sass/Table.scss';
 export const Table = ({donations, updateDonations}) => {
 	// project image/gif paths
 	const urandomimg = <img className='image' src='../../dist/urandomblog.png'/>
-	const bipsuite = <img className='image' src='../../dist/bipsuite-screen.png'/>
+	const bipsuite = <img className='image' src='../../dist/bt_demo.png'/>
 	const organonimg = <img className='image' src='../../dist/organon.png'/>
 	const philsource = <img className='image' src='../../dist/philosource-screen.png'/>
-	const cryptoconsole = <img className='image' src='../../dist/cryptoconsole-screen.png'/>
+	const cryptoconsole = <img className='image' src='../../dist/cc_demo.png'/>
 	const protoimg = <img className='image' src='../../dist/protophile.png'/>;
 
 	// stack logo paths
@@ -37,15 +37,15 @@ export const Table = ({donations, updateDonations}) => {
 	<div id='table'>
 	<ProjectCard project={'urandom.blog'} desc={urandomdesc} applink={'https://urandom.blog/'} githublink={'https://github.com/gavinbarrett/urandom.blog'} image={urandomimg} lang={node} langdesc={null} types={typescript} fe={react} styles={sass} db={psql}/>
 
+	<ProjectCard project={'Crypto Console'} image={cryptoconsole} desc={cconsole} applink={'https://cryptoconsole.site'} githublink={'https://github.com/gavinbarrett/CryptoConsole'} lang={node} types={typescript} fe={react} styles={sass} db={redis}/>
+	
+	<ProjectCard project={'PhiloSource'} image={philsource} desc={phildesc} applink={'https://philosource.site/'} githublink={'https://github.com/gavinbarrett/PhilSource'} lang={node} langdesc={'Node.js'} types={null} fe={react} styles={sass} db={psql}/>
+	
 	<ProjectCard project={'Biptools'} desc={bipdesc} applink={'https://biptools.site/'} githublink={'https://github.com/gavinbarrett/BIP39_Suite/'} image={bipsuite} lang={python} langdesc={'Python3'} types={typescript} fe={react} styles={sass}/>
 
 	<ProjectCard project={'Organon'} desc={organondesc} applink={'https://organon-engine.site'} githublink={'https://github.com/gavinbarrett/SL_Engine'} image={organonimg} lang={python} fe={react} styles={css}/>
 	
 	<ProjectCard project={'ProtoPhile'} image={protoimg} desc={protodesc} applink={'https://github.com/gavinbarrett/ProtoPhile'} githublink={'https://github.com/gavinbarrett/ProtoPhile'} lang={python} langdesc={'Python3'} types={null} fe={null} styles={null}/>
-
-	<ProjectCard project={'PhiloSource'} image={philsource} desc={phildesc} applink={'https://philosource.site/'} githublink={'https://github.com/gavinbarrett/PhilSource'} lang={node} langdesc={'Node.js'} types={null} fe={react} styles={sass} db={psql}/>
-
-	<ProjectCard project={'Crypto Console'} image={cryptoconsole} desc={cconsole} applink={'https://cryptoconsole.site'} githublink={'https://github.com/gavinbarrett/CryptoCourse'} lang={node} types={typescript} fe={react} styles={sass} db={redis}/>
 	</div>
 	<div className='tabheader'>Contact Me</div>
 	<Emailer/>
