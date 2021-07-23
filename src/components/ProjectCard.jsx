@@ -1,13 +1,14 @@
 import React from 'react'
+import { Carousel } from './Carousel';
 import './sass/ProjectCard.scss';
 
-export const ProjectCard = ({applink, githublink, project, image, desc, lang, langdesc, types, fe, styles, db}) => {
+export const ProjectCard = ({applink, githublink, project, images, set, genidx, desc, lang, langdesc, types, fe, styles, db}) => {
 	{/* compose a concise description of a project */}
 	return (<div className="projectcard">
 		<div className='projecttitle'>{project}</div>
 		<div className='projectsnippet'>
 		<ProjectDescription desc={desc} applink={applink} githublink={githublink} project={project}/>
-		<ProjectImage image={image} lang={lang} langdesc={langdesc} fe={fe} types={types} styles={styles} db={db}/>
+		<ProjectImage images={images} set={set} genidx={genidx} lang={lang} langdesc={langdesc} fe={fe} types={types} styles={styles} db={db}/>
 		</div>
 	</div>);
 }
@@ -23,12 +24,13 @@ const ProjectDescription = ({desc, applink, githublink, project}) => {
 	</div>);
 }
 
-const ProjectImage = ({image, lang, langdesc, types, fe, styles, db}) => {
+const ProjectImage = ({images, set, genidx, lang, langdesc, types, fe, styles, db}) => {
 	{/* display an image/gif of the project and display the project's tech stack */}
 	return (<div className='projectimage'>
-		<div className='imagebox'>
+		<Carousel images={images} set={set} genidx={genidx}/>
+		{/*<div className='imagebox'>
 			{image}
-		</div>
+		</div>*/}
 		<ProjectStack lang={lang} langdesc={langdesc} types={types} fe={fe} styles={styles} db={db}/>
 	</div>);
 }
