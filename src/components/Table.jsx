@@ -5,19 +5,37 @@ import './sass/Table.scss';
 
 export const Table = () => {
 	// project image/gif paths
-	const urandomimg = <img className='image' src='../../dist/urandomblog.png'/>
-	const bipsuite = <img className='image' src='../../dist/bt_demo.png'/>
+	//const urandomimg = <img className='image' src='../../dist/urandomblog.png'/>
+	//const bipsuite = <img className='image' src='../../dist/bt_demo.png'/>
 	const organonimg = <img className='image' src='../../dist/organon.png'/>
 	const philsource = <img className='image' src='../../dist/philosource-screen.png'/>
-	const cryptoconsole = <img className='image' src='../../dist/cc_demo.png'/>
+	//const cryptoconsole = <img className='image' src='../../dist/cc_demo.png'/>
 	const protoimg = <img className='image' src='../../dist/protophile.png'/>;
 	//const tunnelrimg = <img className='image' src='../../dist/tunnelr.png'/>
 	//const tunnelrimg2 = <img className='image'
+	// paths for tunnelr
 	const tunnelr1 = '../../dist/tunnelr.png';
 	const tunnelr2 = '../../dist/tunnelr2.png';
+	// paths for urandom.blog
 	const urandom1 = '../../dist/urandompic1.png';
 	const urandom2 = '../../dist/urandompic2.png';
 	const urandom3 = '../../dist/urandompic3.png';
+	// paths for cryptoconsole
+	const crypto1 = '../../dist/cryptoconsole1.png';
+	const crypto2 = '../../dist/cryptoconsole2.png';
+	const crypto3 = '../../dist/cryptoconsole3.png';
+	// paths for philosource
+	const philo1 = '../../dist/philosource1.png';
+	const philo2 = '../../dist/philosource2.png';
+	const philo3 = '../../dist/philosource3.png';
+	// paths for biptools
+	const bip = '../../dist/biptools1.png';
+	const bip2 = '../../dist/biptools2.png';
+	const bip3 = '../../dist/biptools3.png';
+	// paths for organon
+	const organon1 = '../../dist/organon1.png';
+	const organon2 = '../../dist/organon2.png';
+	const organon3 = '../../dist/organon3.png';
 
 	// stack logo paths
 	const shell = '../../dist/shelllogo.png';
@@ -47,13 +65,13 @@ export const Table = () => {
 	
 	<ProjectCard project={'urandom.blog'} desc={urandomdesc} applink={'https://urandom.blog/'} githublink={'https://github.com/gavinbarrett/urandom.blog'} images={[urandom1, urandom2, urandom3]} set={1} genidx={2} lang={node} langdesc={null} types={typescript} fe={react} styles={sass} db={psql}/>
 
-	<ProjectCard project={'Crypto Console'} images={null} desc={cconsole} applink={'https://cryptoconsole.site'} githublink={'https://github.com/gavinbarrett/CryptoConsole'} lang={node} types={typescript} fe={react} styles={sass} db={redis}/>
+	<ProjectCard project={'Crypto Console'} images={[crypto1, crypto2, crypto3]} set={2} genidx={5} desc={cconsole} applink={'https://cryptoconsole.site'} githublink={'https://github.com/gavinbarrett/CryptoConsole'} lang={node} types={typescript} fe={react} styles={sass} db={redis}/>
 	
-	<ProjectCard project={'PhiloSource'} images={null} desc={phildesc} applink={'https://philosource.site/'} githublink={'https://github.com/gavinbarrett/PhilSource'} lang={node} langdesc={'Node.js'} types={null} fe={react} styles={sass} db={psql}/>
+	<ProjectCard project={'PhiloSource'} images={[philo1, philo2, philo3]} set={3} genidx={8} desc={phildesc} applink={'https://philosource.site/'} githublink={'https://github.com/gavinbarrett/PhilSource'} lang={node} langdesc={'Node.js'} types={null} fe={react} styles={sass} db={psql}/>
 	
-	<ProjectCard project={'Biptools'} desc={bipdesc} applink={'https://biptools.site/'} githublink={'https://github.com/gavinbarrett/BIP39_Suite/'} images={null} lang={python} langdesc={'Python3'} types={typescript} fe={react} styles={sass}/>
+	<ProjectCard project={'Biptools'} desc={bipdesc} applink={'https://biptools.site/'} githublink={'https://github.com/gavinbarrett/BIP39_Suite/'} images={[bip, bip2, bip3]} set={4} genidx={11} lang={python} langdesc={'Python3'} types={typescript} fe={react} styles={sass}/>
 
-	<ProjectCard project={'Organon'} desc={organondesc} applink={'https://organon-engine.site'} githublink={'https://github.com/gavinbarrett/SL_Engine'} images={null} lang={python} fe={react} styles={css}/>
+	<ProjectCard project={'Organon'} desc={organondesc} applink={'https://organon-engine.site'} githublink={'https://github.com/gavinbarrett/SL_Engine'} images={[organon1, organon2, organon3]} set={5} genidx={14} lang={python} fe={react} styles={css}/>
 	
 	<ProjectCard project={'ProtoPhile'} images={null} desc={protodesc} applink={'https://github.com/gavinbarrett/ProtoPhile'} githublink={'https://github.com/gavinbarrett/ProtoPhile'} lang={python} langdesc={'Python3'} types={null} fe={null} styles={null}/>
 	</div>

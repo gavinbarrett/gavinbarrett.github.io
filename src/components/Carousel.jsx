@@ -19,14 +19,17 @@ const Input = styled.input`
 
 const Form = styled.form`
 	&[name=${props => props.formname}] {
-		width: 40vw;
-		height: 50vh;
+		width: 80vw;
 		top: 0;
 		left: 0;
 		bottom: 0;
 		right: 0;
 		white-space: nowrap;
 		overflow: hidden;
+		@media only screen and (min-width: 800px) {
+			width: 40vw;
+			height: 50vh;
+		}
 	}
 	&[name=${props => props.formname}] input {
 		position: absolute;
@@ -38,7 +41,7 @@ const Form = styled.form`
 		transition: transform 400ms ease-out;
 		display: inline-block;
 		min-height: 100%;
-		width: 45vw;
+		width: 80vw;
 		height: 50vh;
 		position: relative;
 		z-index: 1;
@@ -48,11 +51,15 @@ const Form = styled.form`
 		background-position: center center;
 		font-size: 3rem;
 		border-radius: 25px;
+		@media only screen and (min-width: 800px) {
+			width: 45vw;
+			height: 50vh;
+		}
 	}
 `;
 
 export const Carousel = ({images, set, genidx}) => {
-	return (<div className={'container'}>
+	return (<div className={'carousel-box'}>
 		<Form name={`form-${set}`} formname={`form-${set}`}>
 			{images ? images.map((path, index) => <Input key={index + genidx} name={`image-${set}`} type={"radio"} id={`image-${set}-${index}`} num={index} shift={100 * index}/>) : ''}
 			{images ? images.map((path, index) => {

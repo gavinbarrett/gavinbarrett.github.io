@@ -28,9 +28,6 @@ const ProjectImage = ({images, set, genidx, lang, langdesc, types, fe, styles, d
 	{/* display an image/gif of the project and display the project's tech stack */}
 	return (<div className='projectimage'>
 		<Carousel images={images} set={set} genidx={genidx}/>
-		{/*<div className='imagebox'>
-			{image}
-		</div>*/}
 		<ProjectStack lang={lang} langdesc={langdesc} types={types} fe={fe} styles={styles} db={db}/>
 	</div>);
 }
