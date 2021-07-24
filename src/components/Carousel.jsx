@@ -26,9 +26,11 @@ const Form = styled.form`
 		right: 0;
 		white-space: nowrap;
 		overflow: hidden;
-		@media only screen and (min-width: 800px) {
+		@media only screen and (min-width: 450px) {
+			width: 70vw;
+		}
+		@media only screen and (min-width: 768px) {
 			width: 40vw;
-			height: 50vh;
 		}
 	}
 	&[name=${props => props.formname}] input {
@@ -40,9 +42,9 @@ const Form = styled.form`
 		color: #fff;
 		transition: transform 400ms ease-out;
 		display: inline-block;
-		min-height: 100%;
 		width: 80vw;
-		height: 50vh;
+		min-height: 70%;
+		aspect-ratio: 16 / 9;		
 		position: relative;
 		z-index: 1;
 		text-align: center;
@@ -51,9 +53,11 @@ const Form = styled.form`
 		background-position: center center;
 		font-size: 3rem;
 		border-radius: 25px;
-		@media only screen and (min-width: 800px) {
-			width: 45vw;
-			height: 50vh;
+		@media only screen and (min-width: 450px) {
+			width: 70vw;
+		}
+		@media only screen and (min-width: 768px) {
+			width: 40vw;
 		}
 	}
 `;
