@@ -6,21 +6,12 @@ $phone_w: 376px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	//background: red;
-	//@media only screen and (min-width: $phone_w) {
-	//	width: 70vw;
-	//	height: 35vh;
-	//	background: blue;
-	//}
 	@media only screen and (min-width: 450px) {
 		width: 70vw;
 		height: 45vh;
-		//background: green;
 	}
 	@media only screen and (min-width: 769px) {
-		//width: 95vw;
 		height: 45vh;
-		//background: pink;
 	}
 }
 
