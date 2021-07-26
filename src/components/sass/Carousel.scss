@@ -1,12 +1,26 @@
+$phone_w: 376px;
+
 .carousel-box {
-	width: 100vw;
-	height: 60vh;
+	width: 80vw;
+	height: 25vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	@media only screen and (min-width: 768px) {
-		width: 50vw;
+	//background: red;
+	//@media only screen and (min-width: $phone_w) {
+	//	width: 70vw;
+	//	height: 35vh;
+	//	background: blue;
+	//}
+	@media only screen and (min-width: 450px) {
+		width: 70vw;
 		height: 45vh;
+		//background: green;
+	}
+	@media only screen and (min-width: 769px) {
+		//width: 95vw;
+		height: 45vh;
+		//background: pink;
 	}
 }
 
@@ -27,9 +41,29 @@
 .carousel-box label:before {
 	content: "\276D";
 	right: 100%;
+	font-size: 1rem;
+	@media only screen and (min-width: $phone_w) {
+		font-size: 1.4rem;
+	}
+	@media only screen and (min-width: 450px) {
+		font-size: 1.8rem;
+	}
+	@media only screen and (min-width: 769px) {
+		font-size: 2rem;
+	}
 }
 
 .carousel-box label:after {
 	content: "\276C";
 	left: 100%;
+	font-size: 1rem;
+	@media only screen and (min-width: $phone_w) {
+		font-size: 1.4rem;
+	}
+	@media only screen and (min-width: 450px) {
+		font-size: 1.8rem;
+	}
+	@media only screen and (min-width: 769px) {
+		font-size: 2rem;
+	}
 }

@@ -7,4 +7,6 @@ $page_color: #D1D1D1;
 	display: flex;
 	flex-direction: column;
 	background: $page_color2;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }

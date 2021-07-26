@@ -19,7 +19,7 @@ const Input = styled.input`
 
 const Form = styled.form`
 	&[name=${props => props.formname}] {
-		width: 80vw;
+		width: 70vw;
 		top: 0;
 		left: 0;
 		bottom: 0;
@@ -29,7 +29,7 @@ const Form = styled.form`
 		@media only screen and (min-width: 450px) {
 			width: 70vw;
 		}
-		@media only screen and (min-width: 768px) {
+		@media only screen and (min-width: 769px) {
 			width: 40vw;
 		}
 	}
@@ -44,7 +44,8 @@ const Form = styled.form`
 		display: inline-block;
 		width: 80vw;
 		min-height: 70%;
-		aspect-ratio: 16 / 9;		
+		padding-top: 56.25%;
+		//aspect-ratio: 16 / 9;		
 		position: relative;
 		z-index: 1;
 		text-align: center;
@@ -52,11 +53,15 @@ const Form = styled.form`
 		background-size: cover;
 		background-position: center center;
 		font-size: 3rem;
-		border-radius: 25px;
+		border-radius: 16px;
+		@media only screen and (min-width: 376px) {
+			width: 70vw;
+			border-radius: 25px;
+		}
 		@media only screen and (min-width: 450px) {
 			width: 70vw;
 		}
-		@media only screen and (min-width: 768px) {
+		@media only screen and (min-width: 769px) {
 			width: 40vw;
 		}
 	}
