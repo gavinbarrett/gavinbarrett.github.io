@@ -11,7 +11,6 @@ $phone_w: 376px;
 	width: 100vw;
 	height: 70vh;
 	@media only screen and (min-width: $phone_w) {
-		//height: 60vh;
 		margin-top: 20%;
 		margin-bottom: 20%;
 	}
@@ -20,7 +19,6 @@ $phone_w: 376px;
 		margin-bottom: 25%;
 	}
 	@media only screen and (min-width: 769px) {
-		//height: 60vh;
 		margin-top: 5%;
 		margin-bottom: 16%;
 	}
